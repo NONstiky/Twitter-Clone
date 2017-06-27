@@ -48,6 +48,7 @@ public class ComposeActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 String tweet_text = etComposeTweet.getText().toString();
 
                 TwitterApp.getRestClient().sendTweet(tweet_text,new JsonHttpResponseHandler(){
