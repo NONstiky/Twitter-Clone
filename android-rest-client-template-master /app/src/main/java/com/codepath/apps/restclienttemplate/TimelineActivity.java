@@ -121,21 +121,54 @@ public class TimelineActivity extends AppCompatActivity {
         // getHomeTimeline is an example endpoint.
 
         client.getHomeTimeline(0, new JsonHttpResponseHandler() {
-            public void onSuccess(JSONArray json) {
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                 // ...the data has come back, add new items to your adapter...
-                tweetAdapter.addAll(tweets);
+                fetchVids(response);
+//                tweetAdapter.addAll(tweets);
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
 
-            public void onFailure(Throwable e) {
-                Log.d("DEBUG", "Fetch timeline error: " + e.toString());
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                super.onFailure(statusCode, headers, throwable, errorResponse);
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+                super.onFailure(statusCode, headers, throwable, errorResponse);
+            }
+
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                super.onFailure(statusCode, headers, responseString, throwable);
             }
         });
     }
+    public void fetchVids(JSONArray response) {
+        //Log.d("TwitterClient", response.toString());
+        // iterate through the JSON Array
+        // for each entry, deserialize the JSON Object
+        for (int i = 0; i < response.length(); i++) {
+            // convert each object to a tweet model
+            // add that Tweet model our data source
+            // notify the adapter that we've added an item
+            Tweet tweet = null;
+            try {
+                tweet = Tweet.fromJSON(response.getJSONObject(i));
+                tweets.add(tweet);
+                tweetAdapter.notifyItemInserted(tweets.size() - 1);
 
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
 
     private void populateTimeline(){
         client.getHomeTimeline(0, new JsonHttpResponseHandler(){
@@ -146,26 +179,9 @@ public class TimelineActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                //Log.d("TwitterClient", response.toString());
-                // iterate through the JSON Array
-                // for each entry, deserialize the JSON Object
-                for (int i = 0; i < response.length();i++){
-                    // convert each object to a tweet model
-                    // add that Tweet model our data source
-                    // notify the adapter that we've added an item
-                    Tweet tweet = null;
-                    try {
-                        tweet = Tweet.fromJSON(response.getJSONObject(i));
-                        tweets.add(tweet);
-                        tweetAdapter.notifyItemInserted(tweets.size()-1);
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
+                    fetchVids(response);
                 }
 
-            }
 
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
