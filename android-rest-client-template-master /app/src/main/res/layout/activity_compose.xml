@@ -16,17 +16,18 @@
         android:id="@+id/btnComposeTweet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:background="@color/twitter_blue"
-        android:text="Tweet" />
+        android:text="Tweet"
+        android:layout_below="@+id/etComposeTweet"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="82dp" />
 
     <TextView
         android:id="@+id/tvCharacterCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/btnComposeTweet"
-        android:text="TextView" />
+        android:text="140"
+        android:layout_alignBottom="@+id/btnComposeTweet"
+        android:layout_toStartOf="@+id/btnComposeTweet" />
 
 </RelativeLayout>
