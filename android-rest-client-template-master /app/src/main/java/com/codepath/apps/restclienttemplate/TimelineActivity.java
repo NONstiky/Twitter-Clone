@@ -1,10 +1,18 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.ClipData;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.MenuView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -17,14 +25,21 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+import static android.icu.text.UnicodeSet.CASE;
+import static com.codepath.apps.restclienttemplate.R.id.miCompose;
+
 public class TimelineActivity extends AppCompatActivity {
 
     private TwitterClient client;
+    private final int EDIT_REQUEST_CODE = 20;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
+    MenuView.ItemView miCompose;
+    MenuView.ItemView miProfile;
 
-    @Override
+    
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
@@ -40,8 +55,40 @@ public class TimelineActivity extends AppCompatActivity {
         rvTweets.setLayoutManager(new LinearLayoutManager(this));
         // set the adapter
         rvTweets.setAdapter(tweetAdapter);
+
         populateTimeline();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        miCompose = (MenuView.ItemView) findViewById(R.id.miCompose);
+        miProfile = (MenuView.ItemView) findViewById(R.id.miProfile);
+        setUpComposeTweetListener();
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.miCompose:
+                Intent i = new Intent(TimelineActivity.this, ComposeActivity.class);
+                startActivityForResult(i,EDIT_REQUEST_CODE);
+            case R.id.miProfile:
+                //TODO Profile
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void setUpComposeTweetListener() {
+        Log.i("MainActivity", "Setting up listener on list view");
+
+        //TODO setOnClickListener, make intent, startUpActivity ComposeActivity
+
+    }
+
 
     private void populateTimeline(){
         client.getHomeTimeline(new JsonHttpResponseHandler(){
