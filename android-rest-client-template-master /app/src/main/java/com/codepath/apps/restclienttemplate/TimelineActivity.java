@@ -20,6 +20,7 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 
@@ -79,6 +80,18 @@ public class TimelineActivity extends AppCompatActivity {
                 //TODO Profile
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // check request code and result code first
+        if (resultCode == RESULT_OK && requestCode == EDIT_REQUEST_CODE) {
+            // Use data parameter
+            Tweet tweet = (Tweet) Parcels.unwrap(data.getParcelableExtra(Tweet.class.getName()));
+            tweets.add(0, tweet);
+            tweetAdapter.notifyItemInserted(0);
+            rvTweets.scrollToPosition(0);
         }
     }
 
