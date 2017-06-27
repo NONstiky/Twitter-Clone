@@ -86,48 +86,33 @@ public class ComposeActivity extends AppCompatActivity {
         }
         });
     }
-    public void setUpTextChangedListener(){
+    public void setUpTextChangedListener() {
 
-        etComposeTweet.addTextChangedListener(new TextWatcher() {
+        final TextWatcher txwatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // Fires right as the text is being changed (even supplies the range of text)
-                int chars = etComposeTweet.getText().length();
+                int chars = s.length();
                 int chars_available = 140 - chars;
                 if(chars_available < 0) {
                     tvCharacterCount.setTextColor(Integer.parseInt("@colors/medium_red"));
                     // TODO Don't allow btnComposeTweet to be pressed
                 }
-                tvCharacterCount.setText(chars_available);
-
-            }
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count,
-                                          int after) {
-//                // Fires right before text is changing
-//                int chars = etComposeTweet.getText().length();
-//                int chars_available = 140 - chars;
-//                if(chars_available < 0) {
-//                    tvCharacterCount.setTextColor(Integer.parseInt("@colors/medium_red"));
-//                    // TODO Don't allow btnComposeTweet to be pressed
-//                }
-//                tvCharacterCount.setText(chars_available);
+                tvCharacterCount.setText(String.valueOf(chars_available));
             }
 
             @Override
             public void afterTextChanged(Editable s) {
-                // Fires right after the text has changed
-//                int chars = etComposeTweet.getText().length();
-//                int chars_available = 140 - chars;
-//                if(chars_available < 0) {
-//                    tvCharacterCount.setTextColor(Integer.parseInt("@colors/medium_red"));
-//                    // TODO Don't allow btnComposeTweet to be pressed
-//                }
-//                tvCharacterCount.setText(chars_available);
-            }
-        });
-    }
 
+            }
+        };
+        etComposeTweet.addTextChangedListener(txwatcher);
+
+    }
 }
 
