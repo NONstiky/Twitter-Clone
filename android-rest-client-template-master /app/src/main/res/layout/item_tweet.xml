@@ -12,6 +12,73 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         app:srcCompat="@android:color/black" />
+    <LinearLayout
+        android:id="@+id/llButtonRow"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tvBody"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:id="@+id/ibReply"
+            android:src="@drawable/noun_74450_cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/tvReplyCount"
+            android:layout_marginStart="22dp" />
+
+        <TextView
+            android:id="@+id/tvReplyCount"
+            android:layout_alignParentRight="@+id/ibReply"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibRetweet"
+            android:src="@drawable/ic_vector_retweet_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/tvHandle" />
+
+        <TextView
+            android:id="@+id/tvRetweetCount"
+            android:layout_alignParentRight="@+id/ibRetweet"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibLike"
+            android:src="@drawable/ic_vector_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/ibDM" />
+
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_alignParentRight="@+id/ibLike"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/ibDM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/tvTimeStamp"
+            android:src="@drawable/ic_vector_messages" />
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvUserName"

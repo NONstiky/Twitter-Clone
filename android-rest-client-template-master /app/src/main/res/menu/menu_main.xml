@@ -14,13 +14,13 @@
         app:actionLayout="@layout/action_view_progress" />
     <item
         android:id="@+id/miProfile"
-        android:icon="@drawable/ic_vector_person"
+        android:icon="@drawable/ic_vector_person_stroke"
         app:showAsAction="ifRoom|withText"
         android:title="Profile">
     </item>
     <item
         android:id="@+id/miCompose"
-        android:icon="@drawable/ic_vector_compose"
+        android:icon="@drawable/vector_compose_fab"
         app:showAsAction="ifRoom"
         android:title="Compose">
     </item>
