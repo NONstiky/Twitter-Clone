@@ -38,8 +38,6 @@ public class TimelineActivity extends AppCompatActivity {
     // Instance of the progress action-view
     MenuItem miActionProgressItem;
 
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
@@ -74,7 +72,7 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_orange_light,
                 android.R.color.holo_red_light);
 
-//        populateTimeline();
+        // populateTimeline();
     }
 
     @Override
@@ -155,7 +153,7 @@ public class TimelineActivity extends AppCompatActivity {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                 // ...the data has come back, add new items to your adapter...
-                fetchVids(response);
+                fetchTweets(response);
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
@@ -176,7 +174,7 @@ public class TimelineActivity extends AppCompatActivity {
             }
         });
     }
-    public void fetchVids(JSONArray response) {
+    public void fetchTweets(JSONArray response) {
         //Log.d("TwitterClient", response.toString());
         // iterate through the JSON Array
         // for each entry, deserialize the JSON Object
@@ -197,6 +195,21 @@ public class TimelineActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * SET THE CLICK LISTENERS FOR THE BUTTON ROW
+     */
+    public void onReplyClick(){
+
+    }
+    public void onRetweetClick(){
+
+    }
+    public void onLikeClick(){
+
+    }
+    public void onDMClick(){
+
+    }
     private void populateTimeline(){
         showProgressBar();
         client.getHomeTimeline(0, new JsonHttpResponseHandler(){
@@ -209,7 +222,7 @@ public class TimelineActivity extends AppCompatActivity {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                fetchVids(response);
+                fetchTweets(response);
                 hideProgressBar();
                 }
 
