@@ -46,7 +46,7 @@ public class TweetDetailActivity extends AppCompatActivity {
         tvUserName.setText(tweet.user.name);
         tvHandle.setText("@" + tweet.user.screenName);
         tvBody.setText(tweet.body);
-        tvCreatedAt.setText(tweet.createdAt);
+        tvCreatedAt.setText(TimeFormatter.getTimeStamp(tweet.createdAt));
         setImage();
     }
 

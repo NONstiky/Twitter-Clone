@@ -7,14 +7,14 @@
     android:layout_height="wrap_content"
     tools:context="com.codepath.apps.restclienttemplate.TweetDetailActivity">
 
-
     <ImageView
         android:id="@+id/ivProfileImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginRight="20dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
         app:srcCompat="@color/colorBlack" />
 
     <TextView
@@ -39,39 +39,72 @@
         android:id="@+id/tvBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/ivProfileImage"
-        android:text="TextView" />
+        android:layout_marginBottom="10dp"
+        android:text="TextView"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/tvCreatedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvBody"
-        android:layout_alignParentStart="true" />
+        android:layout_marginBottom="5dp"
+        android:text="TextView" />
 
-
-    <TextView
-        android:id="@+id/tvRetweetCount"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llLikeRetweetRow"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:text="0 Retweets"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/tvCreatedAt"
-        android:layout_alignParentStart="true" />
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tvRetweetCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tvCreatedAt"
+            android:layout_marginRight="5dp"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRetweetsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvRetweetCount"
+            android:layout_alignBottom="@+id/tvRetweetCount"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/tvHandle"
+            android:text="Retweets" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvRetweetCount"
+            android:layout_alignRight="@+id/tvRetweetsText"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/tvRetweetsText"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/tvLikeCount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="15dp"
-        android:text="0 Likes"
-        android:layout_alignBaseline="@+id/tvRetweetCount"
-        android:layout_alignBottom="@+id/tvRetweetCount"
-        android:layout_toEndOf="@+id/tvRetweetCount" />
+        <TextView
+            android:id="@+id/tvLikesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvRetweetCount"
+            android:layout_alignRight="@+id/tvLikeCount"
+            android:layout_toEndOf="@+id/tvLikeCount"
+            android:text="Likes" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llButtonRow"
@@ -80,7 +113,7 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:weightSum="1"
-        android:layout_below="@+id/tvRetweetCount"
+        android:layout_below="@+id/llLikeRetweetRow"
         android:layout_alignParentStart="true">
 
         <ImageButton
@@ -88,10 +121,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="22dp"
+            android:layout_marginRight="55dp"
             android:layout_toEndOf="@+id/tvReplyCount"
             android:onClick="onReplyClickDetail"
-            android:layout_marginRight="15dp"
             android:src="@drawable/noun_74450_cc" />
 
 
@@ -101,7 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/tvHandle"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="55dp"
             android:onClick="onRetweetClickDetail"
             android:src="@drawable/ic_vector_retweet_stroke" />
 
@@ -110,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="15dp"
+            android:layout_marginRight="55dp"
             android:layout_toStartOf="@+id/ibDM"
             android:onClick="onLikeClickDetail"
             android:src="@drawable/ic_vector_heart" />
@@ -119,7 +151,6 @@
         <ImageButton
             android:id="@+id/ibDM"
             android:layout_width="wrap_content"
-            android:layout_marginRight="15dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/tvTimeStamp"
@@ -128,5 +159,6 @@
 
 
     </LinearLayout>
+
 
 </RelativeLayout>
