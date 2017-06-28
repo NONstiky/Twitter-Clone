@@ -37,24 +37,6 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         mTweets = tweets;
     }
 
-    // getRelativeTimeAgo("Mon Apr 01 21:16:23 +0000 2014");
-    public String getRelativeTimeAgo(String rawJsonDate) {
-        String twitterFormat = "EEE MMM dd HH:mm:ss ZZZZZ yyyy";
-        SimpleDateFormat sf = new SimpleDateFormat(twitterFormat, Locale.ENGLISH);
-        sf.setLenient(true);
-
-        String relativeDate = "";
-        try {
-            long dateMillis = sf.parse(rawJsonDate).getTime();
-            relativeDate = DateUtils.getRelativeTimeSpanString(dateMillis,
-                    System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS).toString();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        return relativeDate;
-    }
-
     // for each row, inflate the layout and cache references into ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -77,8 +59,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         // populate the views according to this data
         holder.tvUsername.setText(tweet.user.name);
         holder.tvBody.setText(tweet.body);
-        holder.tvTimeStamp.setText(formattedTime);
+        holder.tvTimeStamp.setText(" \u00b7 " + formattedTime);
         holder.tvHandle.setText(twitterHandle);
+        holder.tvLikeCount.setText(String.valueOf(tweet.likeCount));
+        holder.tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
 
         Glide.with(context).load(tweet.user.profileImageUrl)
                 .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
@@ -107,6 +91,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public TextView tvBody;
         public TextView tvTimeStamp;
         public TextView tvHandle;
+        public TextView tvRetweetCount;
+        public TextView tvLikeCount;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -118,6 +104,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTimeStamp = (TextView) itemView.findViewById(R.id.tvTimeStamp);
             tvHandle = (TextView) itemView.findViewById(R.id.tvHandle);
+            tvLikeCount = (TextView) itemView.findViewById(R.id.tvLikeCount);
+            tvRetweetCount = (TextView) itemView.findViewById(R.id.tvRetweetCount);
 
             itemView.setOnClickListener(this);
 

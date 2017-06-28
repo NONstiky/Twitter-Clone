@@ -26,6 +26,8 @@ public class TweetDetailActivity extends AppCompatActivity {
     TextView tvHandle;
     TextView tvBody;
     TextView tvCreatedAt;
+    TextView tvLikeCount;
+    TextView tvRetweetCount;
     Tweet tweet;
 
     @Override
@@ -38,6 +40,8 @@ public class TweetDetailActivity extends AppCompatActivity {
         tvHandle = (TextView) findViewById(R.id.tvHandle);
         tvBody = (TextView) findViewById(R.id.tvBody);
         tvCreatedAt = (TextView) findViewById(R.id.tvCreatedAt);
+        tvLikeCount = (TextView) findViewById(R.id.tvLikeCount);
+        tvRetweetCount = (TextView) findViewById(R.id.tvRetweetCount);
 
         // unwrap the movie passed in via intent, using its simple name as a key
         tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
@@ -47,6 +51,9 @@ public class TweetDetailActivity extends AppCompatActivity {
         tvHandle.setText("@" + tweet.user.screenName);
         tvBody.setText(tweet.body);
         tvCreatedAt.setText(TimeFormatter.getTimeStamp(tweet.createdAt));
+        tvLikeCount.setText(String.valueOf(tweet.likeCount));
+        tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
+
         setImage();
     }
 
