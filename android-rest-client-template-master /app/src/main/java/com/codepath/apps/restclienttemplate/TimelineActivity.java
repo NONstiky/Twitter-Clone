@@ -189,6 +189,7 @@ public class TimelineActivity extends AppCompatActivity {
                 tweets.add(tweet);
                 tweetAdapter.notifyItemInserted(tweets.size() - 1);
 
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }

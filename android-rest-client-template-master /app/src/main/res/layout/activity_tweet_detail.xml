@@ -117,6 +117,7 @@
 
         <ImageButton
             android:id="@+id/ibReply"
+            android:backgroundTint="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -128,6 +129,7 @@
 
         <ImageButton
             android:id="@+id/ibRetweet"
+            android:backgroundTint="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/tvHandle"
@@ -138,23 +140,25 @@
 
         <ImageButton
             android:id="@+id/ibLike"
+            android:backgroundTint="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginRight="55dp"
             android:layout_toStartOf="@+id/ibDM"
             android:onClick="onLikeClickDetail"
-            android:src="@drawable/ic_vector_heart" />
+            android:src="@drawable/ic_vector_heart_stroke" />
 
 
         <ImageButton
             android:id="@+id/ibDM"
+            android:backgroundTint="@android:color/transparent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/tvTimeStamp"
             android:onClick="onDMClickDetail"
-            android:src="@drawable/ic_vector_messages" />
+            android:src="@drawable/ic_vector_messages_stroke" />
 
 
     </LinearLayout>

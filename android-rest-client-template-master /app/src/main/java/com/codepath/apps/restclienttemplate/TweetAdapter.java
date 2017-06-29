@@ -18,7 +18,11 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.ImageViewTargetFactory;
 import com.bumptech.glide.request.target.Target;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.parceler.Parcels;
 import org.w3c.dom.Text;
 
@@ -26,6 +30,7 @@ import java.util.List;
 import java.util.Locale;
 import java.text.*;
 
+import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
@@ -138,31 +143,122 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         @Override
         public void onClick(View v) {
             // gets item position
-            int position = getAdapterPosition();
+            final int position = getAdapterPosition();
+            final boolean[] local_retweeted = {false};
             // make sure the position is valid, i.e. actually exists in the view
+            TwitterClient client = new TwitterClient(context);
             if (position != RecyclerView.NO_POSITION) {
-                int id = v.getId();
-                switch(id) {
+                final Tweet tweet = mTweets.get(position);
+                local_retweeted[0] = tweet.retweeted;
+                final int[] id = {v.getId()};
+                switch(id[0]) {
+                    //******************************************************************************//
                     case R.id.ibReply:
                         Toast.makeText(v.getContext(),"REPLY",Toast.LENGTH_LONG).show();
                         break;
+                    //******************************************************************************//
                     case R.id.ibRetweet:
-                        Toast.makeText(v.getContext(),"RETWEET",Toast.LENGTH_LONG).show();
+                        if(local_retweeted[0]){
+                            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                                @Override
+                                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                                    try {
+                                        Tweet newTweet = Tweet.fromJSON(response);
+                                        mTweets.set(position,newTweet);
+                                        tweet.retweetCount--;
+                                        local_retweeted[0] = false;
+                                        toggleRetweetView(tweet,local_retweeted);
+                                    }
+                                    catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                    super.onFailure(statusCode, headers, throwable, errorResponse);
+                                }
+                            });
+                        }
+                        else{
+                            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                                @Override
+                                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                                    try {
+                                        Tweet newTweet = Tweet.fromJSON(response);
+                                        mTweets.set(position,newTweet);
+                                        tweet.retweetCount++;
+                                        local_retweeted[0] = true;
+                                        toggleRetweetView(tweet,local_retweeted);
+
+                                    }
+                                    catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                    super.onFailure(statusCode, headers, throwable, errorResponse);
+                                }
+                            });
+                        }
                         break;
+                    //******************************************************************************//
                     case R.id.ibLike:
-                        Toast.makeText(v.getContext(),"LIKE",Toast.LENGTH_LONG).show();
+                        if(tweet.favorited){
+                            client.unfavoriteTweet(tweet.uid, new JsonHttpResponseHandler(){
+                                @Override
+                                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                                    try {
+                                        Tweet newTweet = Tweet.fromJSON(response);
+                                        mTweets.set(position,newTweet);
+                                        toggleLikeView(tweet);
+                                    }
+                                    catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                    super.onFailure(statusCode, headers, throwable, errorResponse);
+                                }
+                            });
+                        }
+                        else{
+                            client.favoriteTweet(tweet.uid, new JsonHttpResponseHandler(){
+                                @Override
+                                public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                                    try {
+                                        Tweet newTweet = Tweet.fromJSON(response);
+                                        mTweets.set(position,newTweet);
+                                        toggleLikeView(tweet);
+
+                                    }
+                                    catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+
+                                @Override
+                                public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                    super.onFailure(statusCode, headers, throwable, errorResponse);
+                                }
+                            });
+                        }
                         break;
+                    //******************************************************************************//
 
                     case R.id.ibDM:
                         Toast.makeText(v.getContext(),"DM",Toast.LENGTH_LONG).show();
                         break;
+                    //******************************************************************************//
 
                     default:
-                        // get the movie at the position, this won't work if the class is static
-                        Tweet tweet = TweetAdapter.mTweets.get(position);
                         // create intent for the new activity
                         Intent intent = new Intent(TweetAdapter.context, TweetDetailActivity.class);
-                        // serialize the movie using parceler, use its short name as a key
+                        // serialize the tweet using parceler, use its short name as a key
                         intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
                         // show the activity
                         context.startActivity(intent);
@@ -171,9 +267,54 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                 }
             }
          }
+
+        public void toggleLikeView(Tweet tweet){
+            // About to unfavorite
+            if(tweet.favorited){
+                Toast.makeText(context,"Unfavorite",Toast.LENGTH_LONG).show();
+                ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
+            }
+            // About to favorite
+            else{
+                Toast.makeText(context,"Favorite",Toast.LENGTH_LONG).show();
+                ibLike.setImageResource(R.drawable.ic_vector_heart);
+            }
+
+            // Set Counts
+            if(tweet.likeCount > 0){
+                tvLikeCount.setText(String.valueOf(tweet.likeCount));
+            }
+            else{
+                tvLikeCount.setText(String.valueOf(""));
+            }
+        }
+
+        public void toggleRetweetView(Tweet tweet,boolean[] retweeted){
+            // About to unretweet
+            if(retweeted[0]){
+                Toast.makeText(context,"Unretweet",Toast.LENGTH_LONG).show();
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+            }
+            // About to retweet
+            else{
+                Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+            }
+
+            // Set Counts
+            if(tweet.retweetCount > 0){
+                tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
+            }
+            else {
+                tvRetweetCount.setText(String.valueOf(""));
+            }
+        }
+
     }
+
     @Override
     public int getItemCount() {
+
         return mTweets.size();
     }
 }

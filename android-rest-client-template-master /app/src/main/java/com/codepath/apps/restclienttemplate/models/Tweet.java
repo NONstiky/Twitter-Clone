@@ -1,8 +1,14 @@
 package com.codepath.apps.restclienttemplate.models;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
+
+import java.io.InputStream;
+
+import cz.msebera.android.httpclient.HttpEntity;
+
 /**
  * Created by mbanchik on 6/26/17.
  */
@@ -18,6 +24,10 @@ public class Tweet {
     public int retweetCount;
     public int likeCount;
     public int replyCount;
+    public boolean favorited;
+    public boolean retweeted;
+//    public JSONArray media;
+//    public String media_url;
 
     // deserialize the JSON
     public static Tweet fromJSON(JSONObject jsonObject) throws JSONException{
@@ -28,6 +38,8 @@ public class Tweet {
         tweet.uid = jsonObject.getLong("id");
         tweet.createdAt = jsonObject.getString("created_at");
         tweet.user = User.fromJSON(jsonObject.getJSONObject("user"));
+        tweet.favorited = jsonObject.getBoolean("favorited");
+        tweet.retweeted = jsonObject.getBoolean("retweeted");
 
         try {
             tweet.likeCount = jsonObject.getInt("favorite_count");
@@ -43,6 +55,17 @@ public class Tweet {
             tweet.retweetCount = 0;
         }
 
+
+//
+//        try{
+//            JSONObject tweetEntity = jsonObject.getJSONObject("entities");
+//            tweet.media = tweetEntity.getJSONArray("media");
+//            tweet.media_url = (tweet.media).getString(Integer.parseInt("media_url"));
+//
+//        }
+//        catch (JSONException e){
+//            tweet.retweetCount = 0;
+//        }
 
         return tweet;
     }
