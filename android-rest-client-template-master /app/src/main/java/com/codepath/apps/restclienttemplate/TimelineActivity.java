@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -193,22 +194,6 @@ public class TimelineActivity extends AppCompatActivity {
             }
 
         }
-    }
-
-    /**
-     * SET THE CLICK LISTENERS FOR THE BUTTON ROW
-     */
-    public void onReplyClick(){
-
-    }
-    public void onRetweetClick(){
-
-    }
-    public void onLikeClick(){
-
-    }
-    public void onDMClick(){
-
     }
     private void populateTimeline(){
         showProgressBar();

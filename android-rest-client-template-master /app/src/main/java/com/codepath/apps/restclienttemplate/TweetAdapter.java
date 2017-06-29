@@ -8,12 +8,15 @@ import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.ImageViewTargetFactory;
+import com.bumptech.glide.request.target.Target;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import org.parceler.Parcels;
@@ -24,6 +27,8 @@ import java.util.Locale;
 import java.text.*;
 
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
+import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
 
 /**
  * Created by mbanchik on 6/26/17.
@@ -67,6 +72,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         Glide.with(context).load(tweet.user.profileImageUrl)
                 .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
                 .into(holder.ivProfileImage);
+
+
     }
 
     /* Within the RecyclerView.Adapter class */
@@ -87,12 +94,19 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView ivProfileImage;
+
         public TextView tvUsername;
         public TextView tvBody;
         public TextView tvTimeStamp;
         public TextView tvHandle;
         public TextView tvRetweetCount;
         public TextView tvLikeCount;
+
+        public ImageButton ibReply;
+        public ImageButton ibRetweet;
+        public ImageButton ibLike;
+        public ImageButton ibDM;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -107,7 +121,17 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvLikeCount = (TextView) itemView.findViewById(R.id.tvLikeCount);
             tvRetweetCount = (TextView) itemView.findViewById(R.id.tvRetweetCount);
 
+            ibReply = (ImageButton) itemView.findViewById(R.id.ibReply);
+            ibRetweet = (ImageButton) itemView.findViewById(R.id.ibRetweet);
+            ibLike = (ImageButton) itemView.findViewById(R.id.ibLike);
+            ibDM = (ImageButton) itemView.findViewById(R.id.ibDM);
+
+
             itemView.setOnClickListener(this);
+            ibReply.setOnClickListener(this);
+            ibRetweet.setOnClickListener(this);
+            ibLike.setOnClickListener(this);
+            ibDM.setOnClickListener(this);
 
         }
 
@@ -117,16 +141,36 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             int position = getAdapterPosition();
             // make sure the position is valid, i.e. actually exists in the view
             if (position != RecyclerView.NO_POSITION) {
-                // get the movie at the position, this won't work if the class is static
-                Tweet tweet = TweetAdapter.mTweets.get(position);
-                // create intent for the new activity
-                Intent intent = new Intent(TweetAdapter.context, TweetDetailActivity.class);
-                // serialize the movie using parceler, use its short name as a key
-                intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
-                // show the activity
-                context.startActivity(intent);
+                int id = v.getId();
+                switch(id) {
+                    case R.id.ibReply:
+                        Toast.makeText(v.getContext(),"REPLY",Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.ibRetweet:
+                        Toast.makeText(v.getContext(),"RETWEET",Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.ibLike:
+                        Toast.makeText(v.getContext(),"LIKE",Toast.LENGTH_LONG).show();
+                        break;
+
+                    case R.id.ibDM:
+                        Toast.makeText(v.getContext(),"DM",Toast.LENGTH_LONG).show();
+                        break;
+
+                    default:
+                        // get the movie at the position, this won't work if the class is static
+                        Tweet tweet = TweetAdapter.mTweets.get(position);
+                        // create intent for the new activity
+                        Intent intent = new Intent(TweetAdapter.context, TweetDetailActivity.class);
+                        // serialize the movie using parceler, use its short name as a key
+                        intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                        // show the activity
+                        context.startActivity(intent);
+
+
+                }
             }
-        }
+         }
     }
     @Override
     public int getItemCount() {

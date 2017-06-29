@@ -27,7 +27,6 @@
             android:src="@drawable/noun_74450_cc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onReplyClick"
             android:layout_alignParentBottom="true"
             android:layout_toEndOf="@+id/tvReplyCount"
             android:layout_marginStart="22dp" />
@@ -45,7 +44,6 @@
             android:src="@drawable/ic_vector_retweet_stroke"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onRetweetClick"
             android:layout_alignParentBottom="true"
             android:layout_alignEnd="@+id/tvHandle" />
 
@@ -62,7 +60,6 @@
             android:src="@drawable/ic_vector_heart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onLikeClick"
             android:layout_alignParentBottom="true"
             android:layout_toStartOf="@+id/ibDM" />
 
@@ -79,7 +76,6 @@
             android:id="@+id/ibDM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onDMClick"
             android:layout_alignParentBottom="true"
             android:layout_alignStart="@+id/tvTimeStamp"
             android:src="@drawable/ic_vector_messages" />

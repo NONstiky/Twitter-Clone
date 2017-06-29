@@ -2,11 +2,14 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.res.Configuration;
 import android.graphics.Movie;
+import android.icu.util.ValueIterator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -76,16 +79,19 @@ public class TweetDetailActivity extends AppCompatActivity {
     /**
      * SET THE CLICK LISTENERS FOR THE BUTTON ROW
      */
-    public void onReplyClickDetail(){
+    public void onReplyClickDetail(View v){
+        Toast.makeText(context,"REPLY",Toast.LENGTH_LONG).show();
+    }
+    public void onRetweetClickDetail(View v){
+        Toast.makeText(context,"RETWEET",Toast.LENGTH_LONG).show();
 
     }
-    public void onRetweetClickDetail(){
+    public void onLikeClickDetail(View v){
+        Toast.makeText(context,"LIKE",Toast.LENGTH_LONG).show();
 
     }
-    public void onLikeClickDetail(){
-
-    }
-    public void onDMClickDetail(){
+    public void onDMClickDetail(View v){
+        Toast.makeText(context,"DM",Toast.LENGTH_LONG).show();
 
     }
 
