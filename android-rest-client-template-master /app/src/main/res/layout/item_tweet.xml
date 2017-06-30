@@ -113,7 +113,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="@+id/tvBody"
         android:layout_marginLeft="55dp"
-        android:layout_marginRight=""
         android:layout_marginTop="10dp"
         android:layout_below="@+id/tvBody"
         android:adjustViewBounds="true"/>

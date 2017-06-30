@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -31,6 +30,7 @@ public class TimelineActivity extends AppCompatActivity {
     private TwitterClient client;
     private final int COMPOSE_REQUEST_CODE = 20;
     private final int DETAILS_REQUEST_CODE = 21;
+    private final int REPLY_REQUEST_CODE = 22;
     private SwipeRefreshLayout swipeContainer;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
@@ -125,7 +125,7 @@ public class TimelineActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // check request code and result code first
-        if (resultCode == RESULT_OK && requestCode == COMPOSE_REQUEST_CODE) {
+        if (resultCode == RESULT_OK && (requestCode == COMPOSE_REQUEST_CODE || requestCode == REPLY_REQUEST_CODE)) {
             // Use data parameter
             Tweet tweet = (Tweet) Parcels.unwrap(data.getParcelableExtra(Tweet.class.getName()));
             tweets.add(0, tweet);

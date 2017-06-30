@@ -45,6 +45,7 @@ public class TweetDetailActivity extends AppCompatActivity {
     public ImageButton ibLike;
     public ImageButton ibDM;
 
+    private final int REPLY_REQUEST_CODE = 22;
 
     Tweet tweet;
     int position;
@@ -136,7 +137,10 @@ public class TweetDetailActivity extends AppCompatActivity {
      * SET THE CLICK LISTENERS FOR THE BUTTON ROW
      */
     public void onReplyClickDetail(View v){
-        Toast.makeText(context,"REPLY",Toast.LENGTH_LONG).show();
+        Intent i = new Intent(context, ComposeActivity.class);
+        // serialize the tweet using parceler, use its short name as a key
+        i.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+        ((AppCompatActivity)context).startActivityForResult(i,REPLY_REQUEST_CODE);
     }
     public void onRetweetClickDetail(View v){
         TwitterClient client = TwitterApp.getRestClient();
@@ -146,8 +150,10 @@ public class TweetDetailActivity extends AppCompatActivity {
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.retweetCount--;
-                        tweet.retweeted = false;
+                        tweet = newTweet;
+
+//                        tweet.retweetCount--;
+//                        tweet.retweeted = false;
                         toggleRetweetView(newTweet);
 
                     }
@@ -168,8 +174,10 @@ public class TweetDetailActivity extends AppCompatActivity {
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.retweetCount++;
-                        tweet.retweeted = true;
+                        tweet = newTweet;
+
+//                        tweet.retweetCount++;
+//                        tweet.retweeted = true;
                         toggleRetweetView(newTweet);
 
                     }
@@ -193,8 +201,10 @@ public class TweetDetailActivity extends AppCompatActivity {
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.likeCount--;
-                        tweet.favorited = false;
+                        tweet = newTweet;
+
+//                        tweet.likeCount--;
+//                        tweet.favorited = false;
                         toggleLikeView(newTweet);
                     }
                     catch (JSONException e) {
@@ -214,8 +224,9 @@ public class TweetDetailActivity extends AppCompatActivity {
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.likeCount++;
-                        tweet.favorited = true;
+                        tweet = newTweet;
+//                        tweet.likeCount++;
+//                        tweet.favorited = true;
                         toggleLikeView(newTweet);
 
                     }

@@ -2,42 +2,30 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Movie;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
-import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.ImageViewTargetFactory;
-import com.bumptech.glide.request.target.Target;
 import com.codepath.apps.restclienttemplate.models.Tweet;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcels;
-import org.w3c.dom.Text;
 
 import java.util.List;
-import java.util.Locale;
-import java.text.*;
 
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-import static com.codepath.apps.restclienttemplate.R.id.ibLike;
-import static com.codepath.apps.restclienttemplate.R.id.ibRetweet;
-import static com.codepath.apps.restclienttemplate.R.id.ivMediaImage;
-import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
+import static android.app.Activity.RESULT_OK;
 
 /**
  * Created by mbanchik on 6/26/17.
@@ -155,6 +143,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public ImageButton ibLike;
         public ImageButton ibDM;
 
+        private final int REPLY_REQUEST_CODE = 22;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -197,7 +186,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                 switch(id[0]) {
                     //******************************************************************************//
                     case R.id.ibReply:
-                        Toast.makeText(v.getContext(),"REPLY",Toast.LENGTH_LONG).show();
+                        Intent i = new Intent(context, ComposeActivity.class);
+                        // serialize the tweet using parceler, use its short name as a key
+                        i.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                        ((AppCompatActivity)context).startActivityForResult(i,REPLY_REQUEST_CODE);
                         break;
                     //******************************************************************************//
                     case R.id.ibRetweet:
