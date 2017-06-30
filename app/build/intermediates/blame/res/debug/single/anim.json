@@ -1,5 +1,17 @@
 [
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_fade_in.xml"
     },
@@ -12,8 +24,20 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_fade_out.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
@@ -24,6 +48,10 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_popup_enter.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_popup_exit.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_in_top.xml"
     },
@@ -32,11 +60,23 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_out_top.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_popup_enter.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_fade_out.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/anim/abc_slide_out_top.xml"
     }
 ]

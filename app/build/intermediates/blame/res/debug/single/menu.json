@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/menu/menu_main.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/menu/menu_main.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/res/menu/menu_main.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/menu/login.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/menu/login.xml"
     }
 ]

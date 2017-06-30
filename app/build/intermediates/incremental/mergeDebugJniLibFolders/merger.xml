@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/debug/jniLibs"/></dataSet></merger>
