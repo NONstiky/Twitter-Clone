@@ -1,5 +1,6 @@
 package com.codepath.apps.restclienttemplate;
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Movie;
 import android.icu.util.ValueIterator;
@@ -31,6 +32,7 @@ import static com.codepath.apps.restclienttemplate.TweetAdapter.mTweets;
 
 public class TweetDetailActivity extends AppCompatActivity {
     ImageView ivProfileImage;
+    ImageView ivMediaImage;
     TextView tvUserName;
     TextView tvHandle;
     TextView tvBody;
@@ -45,6 +47,7 @@ public class TweetDetailActivity extends AppCompatActivity {
 
 
     Tweet tweet;
+    int position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,7 @@ public class TweetDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tweet_detail);
 
         ivProfileImage = (ImageView) findViewById(R.id.ivProfileImage);
+        ivMediaImage = (ImageView) findViewById(R.id.ivMediaImage);
         tvUserName = (TextView) findViewById(R.id.tvUserName);
         tvHandle = (TextView) findViewById(R.id.tvHandle);
         tvBody = (TextView) findViewById(R.id.tvBody);
@@ -67,6 +71,7 @@ public class TweetDetailActivity extends AppCompatActivity {
 
         // unwrap the movie passed in via intent, using its simple name as a key
         tweet = (Tweet) Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
+        position = (int) Parcels.unwrap(getIntent().getParcelableExtra("position"));
         Log.d("MovieDetailsActivity", String.format("Showing details for '%s'", tweet.user.name));
 
         tvUserName.setText(tweet.user.name);
@@ -94,6 +99,8 @@ public class TweetDetailActivity extends AppCompatActivity {
         }
 
         setImage();
+
+        setMediaImage();
     }
 
     @Override
@@ -112,6 +119,19 @@ public class TweetDetailActivity extends AppCompatActivity {
         } catch(Exception e) { e.printStackTrace();}
     }
 
+    private void setMediaImage(){
+        try{
+            Glide.with(context).load(tweet.media_url)
+                    .load(tweet.media_url)
+                    .bitmapTransform(new RoundedCornersTransformation(context,20,0))
+                    .into(ivMediaImage);
+
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     /**
      * SET THE CLICK LISTENERS FOR THE BUTTON ROW
      */
@@ -121,13 +141,13 @@ public class TweetDetailActivity extends AppCompatActivity {
     public void onRetweetClickDetail(View v){
         TwitterClient client = TwitterApp.getRestClient();
         if(tweet.retweeted){
-            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.retweetCount++;
-                        tweet.retweeted = true;
+                        tweet.retweetCount--;
+                        tweet.retweeted = false;
                         toggleRetweetView(newTweet);
 
                     }
@@ -143,13 +163,13 @@ public class TweetDetailActivity extends AppCompatActivity {
             });
         }
         else{
-            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
                         Tweet newTweet = Tweet.fromJSON(response);
-                        tweet.retweetCount--;
-                        tweet.retweeted = false;
+                        tweet.retweetCount++;
+                        tweet.retweeted = true;
                         toggleRetweetView(newTweet);
 
                     }
@@ -213,8 +233,6 @@ public class TweetDetailActivity extends AppCompatActivity {
 
     }
 
-
-
     public void toggleLikeView(Tweet tweet){
         // About to unfavorite
         if(tweet.favorited){
@@ -232,7 +250,7 @@ public class TweetDetailActivity extends AppCompatActivity {
             tvLikeCount.setText(String.valueOf(tweet.likeCount));
         }
         else{
-            tvLikeCount.setText(String.valueOf(""));
+            tvLikeCount.setText(String.valueOf("0"));
         }
     }
 
@@ -240,12 +258,12 @@ public class TweetDetailActivity extends AppCompatActivity {
         // About to unretweet
         if(tweet.retweeted){
             Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
-            ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+            ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
         }
         // About to retweet
         else{
-            Toast.makeText(context,"Untweet",Toast.LENGTH_LONG).show();
-            ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+            Toast.makeText(context,"Unretweet",Toast.LENGTH_LONG).show();
+            ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
         }
 
         // Set Counts
@@ -253,8 +271,18 @@ public class TweetDetailActivity extends AppCompatActivity {
             tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
         }
         else {
-            tvRetweetCount.setText(String.valueOf(""));
+            tvRetweetCount.setText(String.valueOf("0"));
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        // create intent for the new activity
+        Intent intent = new Intent(context, TimelineActivity.class);
+        // serialize the tweet using parceler, use its short name as a key
+        intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+        intent.putExtra("position", position);
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 }

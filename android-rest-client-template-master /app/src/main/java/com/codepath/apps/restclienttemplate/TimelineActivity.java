@@ -29,7 +29,8 @@ import cz.msebera.android.httpclient.Header;
 public class TimelineActivity extends AppCompatActivity {
 
     private TwitterClient client;
-    private final int EDIT_REQUEST_CODE = 20;
+    private final int COMPOSE_REQUEST_CODE = 20;
+    private final int DETAILS_REQUEST_CODE = 21;
     private SwipeRefreshLayout swipeContainer;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
@@ -86,12 +87,6 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        fetchTimelineAsync(0);
-    }
-
-    @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         // Store instance of the menu item containing progress
         miActionProgressItem = menu.findItem(R.id.miActionProgress);
@@ -118,23 +113,33 @@ public class TimelineActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.miCompose:
                 Intent i = new Intent(TimelineActivity.this, ComposeActivity.class);
-                startActivityForResult(i,EDIT_REQUEST_CODE);
+                startActivityForResult(i,COMPOSE_REQUEST_CODE);
             case R.id.miProfile:
                 //TODO Profile
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // check request code and result code first
-        if (resultCode == RESULT_OK && requestCode == EDIT_REQUEST_CODE) {
+        if (resultCode == RESULT_OK && requestCode == COMPOSE_REQUEST_CODE) {
             // Use data parameter
             Tweet tweet = (Tweet) Parcels.unwrap(data.getParcelableExtra(Tweet.class.getName()));
             tweets.add(0, tweet);
             tweetAdapter.notifyItemInserted(0);
             rvTweets.scrollToPosition(0);
+        }
+
+        else if (resultCode == RESULT_OK && requestCode == DETAILS_REQUEST_CODE) {
+            // Use data parameter
+            Tweet tweet = Parcels.unwrap(data.getParcelableExtra(Tweet.class.getSimpleName()));
+            int position = data.getIntExtra("position",-1);
+            tweets.remove(position);
+            tweets.add(position,tweet);
+            tweetAdapter.notifyItemChanged(position);
         }
     }
 

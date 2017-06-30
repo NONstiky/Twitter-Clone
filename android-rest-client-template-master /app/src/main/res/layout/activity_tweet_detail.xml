@@ -44,21 +44,40 @@
         android:text="TextView"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
+    <ImageView
+        android:id="@+id/ivMediaImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBody"
+        android:adjustViewBounds="true"/>
+
     <TextView
         android:id="@+id/tvCreatedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvBody"
+        android:layout_below="@+id/ivMediaImage"
         android:layout_marginBottom="5dp"
         android:text="TextView" />
+
+    <View
+        android:id="@+id/vDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvCreatedAt"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:id="@+id/llLikeRetweetRow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="@+id/vDivider1"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/tvCreatedAt"
+        android:layout_below="@+id/vDivider1"
         android:layout_marginBottom="5dp">
 
         <TextView
@@ -105,6 +124,17 @@
             android:text="Likes" />
     </LinearLayout>
 
+
+    <View
+        android:id="@+id/vDivider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llLikeRetweetRow"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
     <LinearLayout
         android:id="@+id/llButtonRow"
         android:layout_width="match_parent"
@@ -112,7 +142,7 @@
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:weightSum="1"
-        android:layout_below="@+id/llLikeRetweetRow"
+        android:layout_below="@+id/vDivider2"
         android:layout_alignParentStart="true">
 
         <ImageButton
@@ -163,5 +193,15 @@
 
     </LinearLayout>
 
+
+    <View
+        android:id="@+id/vDivider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llButtonRow"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
 </RelativeLayout>

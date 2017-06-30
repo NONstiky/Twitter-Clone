@@ -26,8 +26,7 @@ public class Tweet {
     public int replyCount;
     public boolean favorited;
     public boolean retweeted;
-//    public JSONArray media;
-//    public String media_url;
+    public String media_url;
 
     // deserialize the JSON
     public static Tweet fromJSON(JSONObject jsonObject) throws JSONException{
@@ -55,17 +54,17 @@ public class Tweet {
             tweet.retweetCount = 0;
         }
 
+        JSONArray media;
 
-//
-//        try{
-//            JSONObject tweetEntity = jsonObject.getJSONObject("entities");
-//            tweet.media = tweetEntity.getJSONArray("media");
-//            tweet.media_url = (tweet.media).getString(Integer.parseInt("media_url"));
-//
-//        }
-//        catch (JSONException e){
-//            tweet.retweetCount = 0;
-//        }
+        try{
+            JSONObject tweetEntity = jsonObject.getJSONObject("entities");
+            media = tweetEntity.getJSONArray("media");
+            tweet.media_url = media.getJSONObject(0).getString("media_url");
+
+        }
+        catch (JSONException e){
+            tweet.retweetCount = 0;
+        }
 
         return tweet;
     }

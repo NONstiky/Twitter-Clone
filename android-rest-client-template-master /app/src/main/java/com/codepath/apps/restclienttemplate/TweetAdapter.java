@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Movie;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 import static com.codepath.apps.restclienttemplate.R.id.ibLike;
 import static com.codepath.apps.restclienttemplate.R.id.ibRetweet;
+import static com.codepath.apps.restclienttemplate.R.id.ivMediaImage;
 import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
 
 /**
@@ -66,43 +68,57 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
     public void onBindViewHolder(ViewHolder holder, int position) {
         // get the data according to position
         Tweet tweet = mTweets.get(position);
-        String formattedTime = TimeFormatter.getTimeDifference(tweet.createdAt);
-        String twitterHandle = " @" + tweet.user.screenName;
-        // populate the views according to this data
-        holder.tvUsername.setText(tweet.user.name);
-        holder.tvBody.setText(tweet.body);
-        holder.tvTimeStamp.setText(" \u00b7 " + formattedTime);
-        holder.tvHandle.setText(twitterHandle);
+        if(tweet != null) {
+            String formattedTime = TimeFormatter.getTimeDifference(tweet.createdAt);
+            String twitterHandle = " @" + tweet.user.screenName;
+            // populate the views according to this data
+            holder.tvUsername.setText(tweet.user.name);
+            holder.tvBody.setText(tweet.body);
+            holder.tvTimeStamp.setText(" \u00b7 " + formattedTime);
+            holder.tvHandle.setText(twitterHandle);
 
-        // SET COUNTERS
-        if(tweet.likeCount >0)
-            holder.tvLikeCount.setText(String.valueOf(tweet.likeCount));
-        else
-            holder.tvLikeCount.setText(String.valueOf(""));
+            try{
+                Glide.with(context).load(tweet.media_url)
+                        .load(tweet.media_url)
+                        .bitmapTransform(new RoundedCornersTransformation(context,20,0))
+                        .into(holder.ivMediaImage);
 
-        if(tweet.retweetCount >0)
-            holder.tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
-        else
-            holder.tvRetweetCount.setText(String.valueOf(""));
-        // SET PROFILE IMAGES
-        Glide.with(context).load(tweet.user.profileImageUrl)
-                .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
-                .into(holder.ivProfileImage);
-        // SET RETWEET AND LIKE BUTTONS
-        if(tweet.retweeted){
-            holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
-        }
-        else{
-            holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
-        }
 
-        // About to unfavorite
-        if(tweet.favorited){
-            holder.ibLike.setImageResource(R.drawable.ic_vector_heart);
-        }
-        // About to favorite
-        else{
-            holder.ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
+
+            // SET COUNTERS
+            if (tweet.likeCount > 0)
+                holder.tvLikeCount.setText(String.valueOf(tweet.likeCount));
+            else
+                holder.tvLikeCount.setText(String.valueOf(""));
+
+            if (tweet.retweetCount > 0)
+                holder.tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
+            else
+                holder.tvRetweetCount.setText(String.valueOf(""));
+
+            // SET PROFILE IMAGES
+            Glide.with(context).load(tweet.user.profileImageUrl)
+                    .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
+                    .into(holder.ivProfileImage);
+            // SET RETWEET AND LIKE BUTTONS
+            if (tweet.retweeted) {
+                holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+            } else {
+                holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+            }
+
+            // About to unfavorite
+            if (tweet.favorited) {
+                holder.ibLike.setImageResource(R.drawable.ic_vector_heart);
+            }
+            // About to favorite
+            else {
+                holder.ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
+            }
         }
 
     }
@@ -125,6 +141,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView ivProfileImage;
+        public ImageView ivMediaImage;
 
         public TextView tvUsername;
         public TextView tvBody;
@@ -145,6 +162,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             // perform findViewById look
 
             ivProfileImage = (ImageView) itemView.findViewById(R.id.ivProfileImage);
+            ivMediaImage = (ImageView) itemView.findViewById(R.id.ivMediaImage);
             tvUsername = (TextView) itemView.findViewById(R.id.tvUserName);
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTimeStamp = (TextView) itemView.findViewById(R.id.tvTimeStamp);
@@ -170,6 +188,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public void onClick(View v) {
             // gets item position
             final int position = getAdapterPosition();
+            final int DETAILS_REQUEST_CODE = 21;
             // make sure the position is valid, i.e. actually exists in the view
             TwitterClient client = TwitterApp.getRestClient();
             if (position != RecyclerView.NO_POSITION) {
@@ -183,14 +202,14 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                     //******************************************************************************//
                     case R.id.ibRetweet:
                         if(tweet.retweeted){
-                            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                                 @Override
                                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-//                                        tweet.retweetCount++;
-//                                        tweet.retweeted = true;
+//                                        tweet.retweetCount--;
+//                                        tweet.retweeted = false;
                                         toggleRetweetView(newTweet);
                                     }
                                     catch (JSONException e) {
@@ -205,14 +224,14 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                             });
                         }
                         else{
-                            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                                 @Override
                                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-//                                        tweet.retweetCount--;
-//                                        tweet.retweeted = false;
+//                                        tweet.retweetCount++;
+//                                        tweet.retweeted = true;
                                         toggleRetweetView(newTweet);
 
                                     }
@@ -284,10 +303,9 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                         Intent intent = new Intent(TweetAdapter.context, TweetDetailActivity.class);
                         // serialize the tweet using parceler, use its short name as a key
                         intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                        intent.putExtra("position",Parcels.wrap(position));
                         // show the activity
-                        context.startActivity(intent);
-
-
+                        ((AppCompatActivity)context).startActivityForResult(intent,DETAILS_REQUEST_CODE);
                 }
             }
          }
@@ -317,12 +335,12 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             // About to unretweet
             if(tweet.retweeted){
                 Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
-                ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
             }
             // About to retweet
             else{
-                Toast.makeText(context,"Untweet",Toast.LENGTH_LONG).show();
-                ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+                Toast.makeText(context,"Unretweet",Toast.LENGTH_LONG).show();
+                ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
             }
 
             // Set Counts
