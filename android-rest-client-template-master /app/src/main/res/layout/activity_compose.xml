@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codepath.apps.restclienttemplate.ReplyActivity">
+    tools:context="com.codepath.apps.restclienttemplate.ComposeActivity">
     <EditText
         android:id="@+id/etComposeTweet"
         android:layout_width="match_parent"
@@ -12,24 +12,52 @@
         android:hint="What's happening?"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btnComposeTweet"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llSendRow"
+        android:layout_width="match_parent"
+        android:gravity="right"
         android:layout_height="wrap_content"
-        android:background="@color/twitter_blue"
-        android:text="Tweet"
         android:layout_below="@+id/etComposeTweet"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="82dp" />
+        android:layout_alignParentStart="true"
+        >
+        <ImageButton
+            android:id="@+id/ibPhoto"
+            app:srcCompat="@drawable/ic_vector_photo_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+             />
+        <ImageButton
+            android:id="@+id/ibGif"
+            app:srcCompat="@drawable/ic_vector_gif_pill_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            />
+        <ImageButton
+            android:id="@+id/ibLocation"
+            app:srcCompat="@drawable/ic_vector_location_stroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+             />
+        <TextView
+            android:id="@+id/tvCharacterCount"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content"
+            android:text="140"
+/>
 
-    <TextView
-        android:id="@+id/tvCharacterCount"
-        android:layout_width="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="15dp"
-        android:layout_height="wrap_content"
-        android:text="140"
-        android:layout_alignBottom="@+id/btnComposeTweet"
-        android:layout_toStartOf="@+id/btnComposeTweet" />
+        <Button
+            android:id="@+id/btnComposeTweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="Tweet"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
 
 </RelativeLayout>

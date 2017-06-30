@@ -9,6 +9,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
@@ -27,6 +28,9 @@ public class ComposeActivity extends AppCompatActivity {
     EditText etComposeTweet;
     TextView tvCharacterCount;
     Button btnComposeTweet;
+    ImageButton ibGif;
+    ImageButton ibPhoto;
+    ImageButton ibLocation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +38,11 @@ public class ComposeActivity extends AppCompatActivity {
         etComposeTweet = (EditText) findViewById(R.id.etComposeTweet);
         tvCharacterCount = (TextView) findViewById(R.id.tvCharacterCount);
         btnComposeTweet = (Button) findViewById(R.id.btnComposeTweet);
+
+//        ibGif = (ImageButton) findViewById(R.id.ibGif);
+//        ibPhoto = (ImageButton) findViewById(R.id.ibPhoto);
+//        ibLocation = (ImageButton) findViewById(R.id.ibLocation);
+
         Tweet tweet = Parcels.unwrap(getIntent().getParcelableExtra(Tweet.class.getSimpleName()));
 
         if(tweet == null){
@@ -95,6 +104,7 @@ public class ComposeActivity extends AppCompatActivity {
 
     private void setUpReplyTweetButton(final Tweet tweet) {
         etComposeTweet.setText("@"+tweet.user.screenName + " ");
+        btnComposeTweet.setText("Reply");
         btnComposeTweet.setOnClickListener(new View.OnClickListener() {
 
             @Override
