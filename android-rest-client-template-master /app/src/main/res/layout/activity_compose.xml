@@ -35,6 +35,13 @@
             android:backgroundTint="@android:color/transparent"
             />
         <ImageButton
+            android:id="@+id/ibPoll"
+            app:srcCompat="@drawable/ic_vector_poll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            />
+        <ImageButton
             android:id="@+id/ibLocation"
             app:srcCompat="@drawable/ic_vector_location_stroke"
             android:layout_width="wrap_content"
