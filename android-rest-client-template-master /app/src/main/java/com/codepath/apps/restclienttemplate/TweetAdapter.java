@@ -33,6 +33,8 @@ import java.text.*;
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
+import static com.codepath.apps.restclienttemplate.R.id.ibLike;
+import static com.codepath.apps.restclienttemplate.R.id.ibRetweet;
 import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
 
 /**
@@ -71,13 +73,37 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         holder.tvBody.setText(tweet.body);
         holder.tvTimeStamp.setText(" \u00b7 " + formattedTime);
         holder.tvHandle.setText(twitterHandle);
-        holder.tvLikeCount.setText(String.valueOf(tweet.likeCount));
-        holder.tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
 
+        // SET COUNTERS
+        if(tweet.likeCount >0)
+            holder.tvLikeCount.setText(String.valueOf(tweet.likeCount));
+        else
+            holder.tvLikeCount.setText(String.valueOf(""));
+
+        if(tweet.retweetCount >0)
+            holder.tvRetweetCount.setText(String.valueOf(tweet.retweetCount));
+        else
+            holder.tvRetweetCount.setText(String.valueOf(""));
+        // SET PROFILE IMAGES
         Glide.with(context).load(tweet.user.profileImageUrl)
                 .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
                 .into(holder.ivProfileImage);
+        // SET RETWEET AND LIKE BUTTONS
+        if(tweet.retweeted){
+            holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
+        }
+        else{
+            holder.ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
+        }
 
+        // About to unfavorite
+        if(tweet.favorited){
+            holder.ibLike.setImageResource(R.drawable.ic_vector_heart);
+        }
+        // About to favorite
+        else{
+            holder.ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
+        }
 
     }
 
@@ -144,12 +170,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public void onClick(View v) {
             // gets item position
             final int position = getAdapterPosition();
-            final boolean[] local_retweeted = {false};
             // make sure the position is valid, i.e. actually exists in the view
-            TwitterClient client = new TwitterClient(context);
+            TwitterClient client = TwitterApp.getRestClient();
             if (position != RecyclerView.NO_POSITION) {
                 final Tweet tweet = mTweets.get(position);
-                local_retweeted[0] = tweet.retweeted;
                 final int[] id = {v.getId()};
                 switch(id[0]) {
                     //******************************************************************************//
@@ -158,16 +182,16 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                         break;
                     //******************************************************************************//
                     case R.id.ibRetweet:
-                        if(local_retweeted[0]){
-                            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                        if(tweet.retweeted){
+                            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                                 @Override
                                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-                                        tweet.retweetCount--;
-                                        local_retweeted[0] = false;
-                                        toggleRetweetView(tweet,local_retweeted);
+//                                        tweet.retweetCount++;
+//                                        tweet.retweeted = true;
+                                        toggleRetweetView(newTweet);
                                     }
                                     catch (JSONException e) {
                                         e.printStackTrace();
@@ -181,15 +205,15 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                             });
                         }
                         else{
-                            client.retweetTweet(tweet.uid, new JsonHttpResponseHandler(){
+                            client.unretweetTweet(tweet.uid, new JsonHttpResponseHandler(){
                                 @Override
                                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-                                        tweet.retweetCount++;
-                                        local_retweeted[0] = true;
-                                        toggleRetweetView(tweet,local_retweeted);
+//                                        tweet.retweetCount--;
+//                                        tweet.retweeted = false;
+                                        toggleRetweetView(newTweet);
 
                                     }
                                     catch (JSONException e) {
@@ -213,7 +237,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-                                        toggleLikeView(tweet);
+                                        toggleLikeView(newTweet);
                                     }
                                     catch (JSONException e) {
                                         e.printStackTrace();
@@ -233,7 +257,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                                     try {
                                         Tweet newTweet = Tweet.fromJSON(response);
                                         mTweets.set(position,newTweet);
-                                        toggleLikeView(tweet);
+                                        toggleLikeView(newTweet);
 
                                     }
                                     catch (JSONException e) {
@@ -271,13 +295,13 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public void toggleLikeView(Tweet tweet){
             // About to unfavorite
             if(tweet.favorited){
-                Toast.makeText(context,"Unfavorite",Toast.LENGTH_LONG).show();
-                ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
+                Toast.makeText(context,"Favorite",Toast.LENGTH_LONG).show();
+                ibLike.setImageResource(R.drawable.ic_vector_heart);
             }
             // About to favorite
             else{
-                Toast.makeText(context,"Favorite",Toast.LENGTH_LONG).show();
-                ibLike.setImageResource(R.drawable.ic_vector_heart);
+                Toast.makeText(context,"Unfavorite",Toast.LENGTH_LONG).show();
+                ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
             }
 
             // Set Counts
@@ -289,15 +313,15 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             }
         }
 
-        public void toggleRetweetView(Tweet tweet,boolean[] retweeted){
+        public void toggleRetweetView(Tweet tweet){
             // About to unretweet
-            if(retweeted[0]){
-                Toast.makeText(context,"Unretweet",Toast.LENGTH_LONG).show();
+            if(tweet.retweeted){
+                Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
             }
             // About to retweet
             else{
-                Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
+                Toast.makeText(context,"Untweet",Toast.LENGTH_LONG).show();
                 ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
             }
 

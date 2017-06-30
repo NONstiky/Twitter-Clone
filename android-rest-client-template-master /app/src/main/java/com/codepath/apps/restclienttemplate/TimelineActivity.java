@@ -82,8 +82,13 @@ public class TimelineActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         miCompose = (MenuView.ItemView) findViewById(R.id.miCompose);
         miProfile = (MenuView.ItemView) findViewById(R.id.miProfile);
-        setUpComposeTweetListener();
         return true;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        fetchTimelineAsync(0);
     }
 
     @Override
@@ -133,24 +138,19 @@ public class TimelineActivity extends AppCompatActivity {
         }
     }
 
-    private void setUpComposeTweetListener() {
-        Log.i("MainActivity", "Setting up listener on list view");
-
-        //TODO setOnClickListener, make intent, startUpActivity ComposeActivity
-
-    }
-
     public void fetchTimelineAsync(int page) {
         // Send the network request to fetch the updated data
         // `client` here is an instance of Android Async HTTP
         // getHomeTimeline is an example endpoint.
-        showProgressBar();
+        if(miActionProgressItem != null)
+            showProgressBar();
 
         client.getHomeTimeline(0, new JsonHttpResponseHandler() {
 
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                hideProgressBar();
+                if(miActionProgressItem != null)
+                    hideProgressBar();
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
                 // ...the data has come back, add new items to your adapter...
