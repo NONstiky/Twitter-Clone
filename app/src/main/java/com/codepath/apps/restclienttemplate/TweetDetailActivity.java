@@ -26,10 +26,6 @@ import org.w3c.dom.Text;
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-import static com.codepath.apps.restclienttemplate.R.id.ibRetweet;
-import static com.codepath.apps.restclienttemplate.TweetAdapter.context;
-import static com.codepath.apps.restclienttemplate.TweetAdapter.mTweets;
-
 public class TweetDetailActivity extends AppCompatActivity {
     ImageView ivProfileImage;
     ImageView ivMediaImage;
@@ -113,18 +109,18 @@ public class TweetDetailActivity extends AppCompatActivity {
     private void setImage() {
         try{
             // load image using glide
-            Glide.with(context).load(tweet.user.profileImageUrl)
+            Glide.with(this).load(tweet.user.profileImageUrl)
                     .load(tweet.user.profileImageUrl)
-                    .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
+                    .bitmapTransform(new RoundedCornersTransformation(this, 25, 0))
                     .into(ivProfileImage);
         } catch(Exception e) { e.printStackTrace();}
     }
 
     private void setMediaImage(){
         try{
-            Glide.with(context).load(tweet.media_url)
+            Glide.with(this).load(tweet.media_url)
                     .load(tweet.media_url)
-                    .bitmapTransform(new RoundedCornersTransformation(context,20,0))
+                    .bitmapTransform(new RoundedCornersTransformation(this,20,0))
                     .into(ivMediaImage);
 
         }
@@ -137,10 +133,10 @@ public class TweetDetailActivity extends AppCompatActivity {
      * SET THE CLICK LISTENERS FOR THE BUTTON ROW
      */
     public void onReplyClickDetail(View v){
-        Intent i = new Intent(context, ComposeActivity.class);
+        Intent i = new Intent(this, ComposeActivity.class);
         // serialize the tweet using parceler, use its short name as a key
         i.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
-        ((AppCompatActivity)context).startActivityForResult(i,REPLY_REQUEST_CODE);
+        ((AppCompatActivity)this).startActivityForResult(i,REPLY_REQUEST_CODE);
     }
     public void onRetweetClickDetail(View v){
         TwitterClient client = TwitterApp.getRestClient();
@@ -240,19 +236,19 @@ public class TweetDetailActivity extends AppCompatActivity {
     }
 
     public void onDMClickDetail(View v){
-        Toast.makeText(context,"DM",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"DM",Toast.LENGTH_LONG).show();
 
     }
 
     public void toggleLikeView(Tweet tweet){
         // About to unfavorite
         if(tweet.favorited){
-            Toast.makeText(context,"Favorite",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Favorite",Toast.LENGTH_LONG).show();
             ibLike.setImageResource(R.drawable.ic_vector_heart);
         }
         // About to favorite
         else{
-            Toast.makeText(context,"Unfavorite",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Unfavorite",Toast.LENGTH_LONG).show();
             ibLike.setImageResource(R.drawable.ic_vector_heart_stroke);
         }
 
@@ -268,12 +264,12 @@ public class TweetDetailActivity extends AppCompatActivity {
     public void toggleRetweetView(Tweet tweet){
         // About to unretweet
         if(tweet.retweeted){
-            Toast.makeText(context,"Retweet",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Retweet",Toast.LENGTH_LONG).show();
             ibRetweet.setImageResource(R.drawable.ic_vector_retweet);
         }
         // About to retweet
         else{
-            Toast.makeText(context,"Unretweet",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Unretweet",Toast.LENGTH_LONG).show();
             ibRetweet.setImageResource(R.drawable.ic_vector_retweet_stroke);
         }
 
@@ -289,7 +285,7 @@ public class TweetDetailActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // create intent for the new activity
-        Intent intent = new Intent(context, TimelineActivity.class);
+        Intent intent = new Intent(this, TimelineActivity.class);
         // serialize the tweet using parceler, use its short name as a key
         intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
         intent.putExtra("position", position);

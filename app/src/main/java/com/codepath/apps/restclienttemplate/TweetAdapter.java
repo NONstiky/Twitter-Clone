@@ -25,15 +25,14 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
-import static android.app.Activity.RESULT_OK;
 
 /**
  * Created by mbanchik on 6/26/17.
  */
 
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
-    static List<Tweet> mTweets;
-    static Context context;
+    List<Tweet> mTweets;
+    Context context;
     // pass in the Tweets array in the Constructor
     public TweetAdapter(List<Tweet> tweets){
         mTweets = tweets;
@@ -127,7 +126,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
     // create ViewHolder class
 
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView ivProfileImage;
         public ImageView ivMediaImage;
 
@@ -292,7 +291,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
                     default:
                         // create intent for the new activity
-                        Intent intent = new Intent(TweetAdapter.context, TweetDetailActivity.class);
+                        Intent intent = new Intent(context, TweetDetailActivity.class);
                         // serialize the tweet using parceler, use its short name as a key
                         intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
                         intent.putExtra("position",Parcels.wrap(position));

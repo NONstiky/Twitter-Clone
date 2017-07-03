@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 03 16:04:39 PDT 2017
+#Mon Jul 03 16:51:21 PDT 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/design_bottom_navigation_item_background.xml
