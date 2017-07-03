@@ -3,6 +3,7 @@ package com.codepath.apps.restclienttemplate.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,12 +12,17 @@ import android.view.ViewGroup;
 
 import com.codepath.apps.restclienttemplate.R;
 import com.codepath.apps.restclienttemplate.TweetAdapter;
+import com.codepath.apps.restclienttemplate.TwitterApp;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import static com.codepath.apps.restclienttemplate.R.id.swipeContainer;
 
 /**
  * Created by mbanchik on 7/3/17.
@@ -46,6 +52,25 @@ public class TweetsListFragment extends Fragment {
         rvTweets.setLayoutManager(new LinearLayoutManager(getContext()));
         // set the adapter
         rvTweets.setAdapter(tweetAdapter);
+//
+//
+//        // Lookup the swipe container view
+//        swipeContainer = (SwipeRefreshLayout) findViewById(swipeContainer);
+//        // Setup refresh listener which triggers new data loading
+//        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+//            @Override
+//            public void onRefresh() {
+//                // Your code to refresh the list here.
+//                // Make sure you call swipeContainer.setRefreshing(false)
+//                // once the network request has completed successfully.
+//                fetchTimelineAsync(0);
+//            }
+//        });
+//        // Configure the refreshing colors
+//        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+//                android.R.color.holo_green_light,
+//                android.R.color.holo_orange_light,
+//                android.R.color.holo_red_light);
         return v;
 
     }
@@ -75,4 +100,44 @@ public class TweetsListFragment extends Fragment {
 
         }
     }
+//
+//
+//    public void fetchTimelineAsync(int page) {
+//        // Send the network request to fetch the updated data
+//        // `client` here is an instance of Android Async HTTP
+//        // getHomeTimeline is an example endpoint.
+//        if(miActionProgressItem != null)
+//            showProgressBar();
+//
+//        TwitterApp.getRestClient().getHomeTimeline(0, new JsonHttpResponseHandler() {
+//
+//            @Override
+//            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+//                if(miActionProgressItem != null)
+//                    hideProgressBar();
+//                // Remember to CLEAR OUT old items before appending in the new ones
+//                fragmentTweetsList.getTweetAdapter().clear();
+//                // ...the data has come back, add new items to your adapter...
+//                fragmentTweetsList.addItems(response);
+//                // Now we call setRefreshing(false) to signal refresh has finished
+//                swipeContainer.setRefreshing(false);
+//            }
+//
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+//                super.onFailure(statusCode, headers, throwable, errorResponse);
+//            }
+//
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+//                super.onFailure(statusCode, headers, throwable, errorResponse);
+//            }
+//
+//            @Override
+//            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+//                super.onFailure(statusCode, headers, responseString, throwable);
+//            }
+//        });
+//    }
+
 }

@@ -56,16 +56,20 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_location_stroke.png",
-        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/res/drawable/ic_vector_location_stroke.png"
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
-        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_list_selector_holo_dark.xml"
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_location_stroke.png",
+        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/res/drawable/ic_vector_location_stroke.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
@@ -90,6 +94,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/navigation_empty_icon.xml",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable/navigation_empty_icon.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_photo_stroke.png",
@@ -120,12 +128,12 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
-        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_ic_menu_overflow_material.xml"
-    },
-    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
@@ -228,6 +236,10 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_btn_radio_material.xml"
     },
@@ -246,6 +258,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_retweet.png",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/src/main/res/drawable/ic_vector_retweet.png"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/design_password_eye.xml",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable/design_password_eye.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_poll.png",
@@ -378,6 +394,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable/design_snackbar_background.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/android-rest-client-template-master /app/build/intermediates/res/merged/debug/drawable/ic_vector_heart.png",

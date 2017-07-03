@@ -40,6 +40,10 @@
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable-xhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/design_ic_visibility_off.png",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -158,6 +162,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/design_ic_visibility.png",
+        "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/drawable-xhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
