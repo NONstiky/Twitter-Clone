@@ -11,7 +11,159 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a52bd4ce-4bfc-459b-b42b-5ab53f504d50" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/HomeTimelineFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/MentionsTimelineFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/fragments_tweets_list.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-af/values-af.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-am/values-am.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ar/values-ar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-be-rBY/values-be-rBY.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn-rBD/values-bn-rBD.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs-rBA/values-bs-rBA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ca/values-ca.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-cs/values-cs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-da/values-da.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es/values-es.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-et-rEE/values-et-rEE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-eu-rES/values-eu-rES.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl-rES/values-gl-rES.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gu-rIN/values-gu-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hr/values-hr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hu/values-hu.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-in/values-in.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is-rIS/values-is-rIS.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-it/values-it.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka-rGE/values-ka-rGE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km-rKH/values-km-rKH.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kn-rIN/values-kn-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ky-rKG/values-ky-rKG.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo-rLA/values-lo-rLA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lt/values-lt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lv/values-lv.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk-rMK/values-mk-rMK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn-rMN/values-mn-rMN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mr-rIN/values-mr-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms-rMY/values-ms-rMY.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rMM/values-my-rMM.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nb/values-nb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-nl/values-nl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa-rIN/values-pa-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pl/values-pl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ro/values-ro.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ru/values-ru.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq-rAL/values-sq-rAL.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sv/values-sv.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw/values-sw.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ta-rIN/values-ta-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-te-rIN/values-te-rIN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-th/values-th.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tl/values-tl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-tr/values-tr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uk/values-uk.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v13/values-v13.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$integer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$menu.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$menu.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$style.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter$ViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetDetailActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetDetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TwitterClient.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TwitterClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/oauth/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/oauth/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/oauth/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/oauth/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/Z1zo22l2OzPKixlelcwrjcKDOO4=" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/Z1zo22l2OzPKixlelcwrjcKDOO4=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_350e9742eb4324389980392d0bf262c6f61d33e9.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_350e9742eb4324389980392d0bf262c6f61d33e9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/Tweet$$Parcelable.java" afterPath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/Tweet$$Parcelable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/User$$Parcelable.java" afterPath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/User$$Parcelable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/apps/restclienttemplate/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/apps/restclienttemplate/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/oauth/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/oauth/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_timeline.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_timeline.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" afterPath="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,31 +197,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5197542">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="LayoutInflater.java" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/view/LayoutInflater.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5685">
-                  <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#45177#0" expanded="false" />
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#7914#7915#0" expanded="false" />
-                    <element signature="e#7948#7949#0" expanded="false" />
-                    <element signature="e#10046#10047#0" expanded="false" />
-                    <element signature="e#10077#10078#0" expanded="false" />
-                    <element signature="e#10464#10465#0" expanded="false" />
-                    <element signature="e#10496#10497#0" expanded="false" />
-                    <element signature="e#12953#12954#0" expanded="false" />
-                    <element signature="e#12983#12984#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="TweetAdapter.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TweetAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="675">
+                <state relative-caret-position="617">
                   <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -78,90 +209,83 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="RecyclerView.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="93150">
-                  <caret line="6366" column="0" selection-start-line="6366" selection-start-column="0" selection-end-line="6366" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#228067#228068#0" expanded="true" />
-                    <element signature="e#228133#228134#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LinearLayoutManager.java" pinned="false" current-in-tab="false">
-            <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/LinearLayoutManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="21825">
-                  <caret line="1514" column="0" selection-start-line="1514" selection-start-column="0" selection-end-line="1514" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Resources.java" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/res/Resources.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="28260">
-                  <caret line="1985" column="0" selection-start-line="1985" selection-start-column="0" selection-end-line="1985" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#87109#0" expanded="false" />
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#7446#7447#0" expanded="false" />
-                    <element signature="e#7481#7482#0" expanded="false" />
-                    <element signature="e#7547#7548#0" expanded="false" />
-                    <element signature="e#7589#7590#0" expanded="false" />
-                    <element signature="e#10216#10217#0" expanded="false" />
-                    <element signature="e#10253#10254#0" expanded="false" />
-                    <element signature="e#10325#10326#0" expanded="false" />
-                    <element signature="e#10360#10361#0" expanded="false" />
-                    <element signature="e#57056#57057#0" expanded="false" />
-                    <element signature="e#57097#57098#0" expanded="false" />
-                    <element signature="e#58125#58126#0" expanded="false" />
-                    <element signature="e#58184#58185#0" expanded="false" />
-                    <element signature="e#58664#58665#0" expanded="false" />
-                    <element signature="e#58722#58723#0" expanded="false" />
-                    <element signature="e#65873#65874#0" expanded="false" />
-                    <element signature="e#65933#65934#0" expanded="false" />
-                    <element signature="e#66131#66132#0" expanded="false" />
-                    <element signature="e#66176#66177#0" expanded="false" />
-                    <element signature="e#67255#67256#0" expanded="false" />
-                    <element signature="e#67324#67325#0" expanded="false" />
-                    <element signature="e#67798#67799#0" expanded="false" />
-                    <element signature="e#67856#67857#0" expanded="false" />
-                    <element signature="e#67906#67907#0" expanded="false" />
-                    <element signature="e#67970#67971#0" expanded="false" />
-                    <element signature="e#68047#68048#0" expanded="false" />
-                    <element signature="e#68097#68098#0" expanded="false" />
-                    <element signature="e#68655#68656#0" expanded="false" />
-                    <element signature="e#68707#68708#0" expanded="false" />
-                    <element signature="e#69340#69341#0" expanded="false" />
-                    <element signature="e#69383#69384#0" expanded="false" />
-                    <element signature="e#70461#70462#0" expanded="false" />
-                    <element signature="e#70501#70502#0" expanded="false" />
-                    <element signature="e#74476#74477#0" expanded="false" />
-                    <element signature="e#74533#74534#0" expanded="false" />
-                    <element signature="e#74938#74939#0" expanded="false" />
-                    <element signature="e#74994#74995#0" expanded="false" />
-                    <element signature="e#77063#77064#0" expanded="false" />
-                    <element signature="e#77105#77106#0" expanded="false" />
-                    <element signature="e#83733#83734#0" expanded="false" />
-                    <element signature="e#83782#83783#0" expanded="false" />
-                    <element signature="e#84000#84001#0" expanded="false" />
-                    <element signature="e#84049#84050#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ComposeActivity.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ComposeActivity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ComposeActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+                <state relative-caret-position="240">
+                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="activity_timeline.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+              <provider editor-type-id="android-designer2">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TimelineActivity.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="137">
+                  <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TwitterClient.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MentionsTimelineFragment.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/MentionsTimelineFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="HomeTimelineFragment.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/HomeTimelineFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TweetsListFragment.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="110">
+                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1654#1655#0" expanded="true" />
+                    <element signature="e#1689#1690#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -173,54 +297,6 @@
                   <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
                   <folding />
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ResourcesImpl.java" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/content/res/ResourcesImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2085">
-                  <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#48401#0" expanded="false" />
-                    <element signature="imports" expanded="false" />
-                    <element signature="e#6168#6169#0" expanded="false" />
-                    <element signature="e#6210#6211#0" expanded="false" />
-                    <element signature="e#6249#6250#0" expanded="false" />
-                    <element signature="e#6279#6280#0" expanded="false" />
-                    <element signature="e#6555#6556#0" expanded="false" />
-                    <element signature="e#6592#6593#0" expanded="false" />
-                    <element signature="e#6639#6640#0" expanded="false" />
-                    <element signature="e#6693#6694#0" expanded="false" />
-                    <element signature="e#6741#6742#0" expanded="false" />
-                    <element signature="e#6806#6807#0" expanded="false" />
-                    <element signature="e#12072#12073#0" expanded="false" />
-                    <element signature="e#12109#12110#0" expanded="false" />
-                    <element signature="e#42347#42348#0" expanded="false" />
-                    <element signature="e#42385#42386#0" expanded="false" />
-                    <element signature="e#43428#43429#0" expanded="false" />
-                    <element signature="e#43463#43464#0" expanded="false" />
-                    <element signature="e#43508#43509#0" expanded="false" />
-                    <element signature="e#43545#43546#0" expanded="false" />
-                    <element signature="e#43595#43596#0" expanded="false" />
-                    <element signature="e#43637#43638#0" expanded="false" />
-                    <element signature="e#46409#46410#0" expanded="false" />
-                    <element signature="e#46490#46491#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="activity_compose.xml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_compose.xml">
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-              <provider selected="true" editor-type-id="android-designer2">
-                <state />
               </provider>
             </entry>
           </file>
@@ -248,7 +324,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="activity_tweet_detail.xml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="activity_tweet_detail.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_tweet_detail.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="15">
@@ -261,6 +337,19 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="fragments_tweets_list.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragments_tweets_list.xml">
+              <provider editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+              <provider selected="true" editor-type-id="android-designer2">
+                <state />
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-second>
     </splitter>
@@ -268,9 +357,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
         <option value="layoutResourceFile_vertical" />
         <option value="Class" />
-        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -2109,25 +2198,30 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/EndlessRecyclerViewScrollListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/MyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/models/Tweet.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_tweet_detail.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/item_tweet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ReplyActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TweetAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TweetDetailActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/shape.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_compose.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ComposeActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/fragments_tweets_list.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/TweetsListFragments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/HomeTimelineFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/MentionsTimelineFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="492" />
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="x" value="420" />
+    <option name="y" value="85" />
+    <option name="width" value="1836" />
     <option name="height" value="815" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -2156,29 +2250,49 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-rest-client-template-master" />
+              <option name="myItemId" value="Twitter-Clone" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-rest-client-template-master" />
+              <option name="myItemId" value="Twitter-Clone" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-rest-client-template-master" />
+              <option name="myItemId" value="Twitter-Clone" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Twitter-Clone" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -2196,7 +2310,51 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android-rest-client-template-master" />
+              <option name="myItemId" value="Twitter-Clone" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restclienttemplate" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Twitter-Clone" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restclienttemplate" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Twitter-Clone" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -2210,6 +2368,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -2220,6 +2380,8 @@
     <property name="DEBUGGABLE_PROCESS" value="com.codepath.apps.restclienttemplate" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2608,7 +2770,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="492" y="23" width="1440" height="815" extended-state="1" />
+    <frame x="420" y="85" width="1836" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2618,13 +2780,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5707196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20471464" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18526466" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14437012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2637,7 +2800,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42775393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2711,34 +2873,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/view/WindowCallbackWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/app/AppCompatDelegateImplBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/app/AppCompatDelegateImplV9.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/view/menu/MenuBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1086" column="0" selection-start-line="1086" selection-start-column="0" selection-end-line="1086" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.3.1/appcompat-v7-25.3.1-sources.jar!/android/support/v7/view/menu/MenuItemImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
@@ -2841,16 +2975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ReplyActivity.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/MyDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2903,20 +3027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="115" column="27" selection-start-line="115" selection-start-column="27" selection-end-line="115" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -3076,19 +3186,25 @@
             <element signature="e#83782#83783#0" expanded="false" />
             <element signature="e#84000#84001#0" expanded="false" />
             <element signature="e#84049#84050#0" expanded="false" />
+            <element signature="e#84273#84274#0" expanded="false" />
+            <element signature="e#84321#84322#0" expanded="false" />
+            <element signature="e#84500#84501#0" expanded="false" />
+            <element signature="e#84549#84550#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-25/android/view/LayoutInflater.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5685">
+        <state relative-caret-position="5655">
           <caret line="424" column="0" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
           <folding>
             <element signature="e#0#45177#0" expanded="false" />
             <element signature="imports" expanded="false" />
             <element signature="e#7914#7915#0" expanded="false" />
             <element signature="e#7948#7949#0" expanded="false" />
+            <element signature="e#9740#9741#0" expanded="false" />
+            <element signature="e#9771#9772#0" expanded="false" />
             <element signature="e#10046#10047#0" expanded="false" />
             <element signature="e#10077#10078#0" expanded="false" />
             <element signature="e#10464#10465#0" expanded="false" />
@@ -3103,27 +3219,380 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21825">
           <caret line="1514" column="0" selection-start-line="1514" selection-start-column="0" selection-end-line="1514" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TweetAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#103405#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5637#5638#0" expanded="false" />
+            <element signature="e#5683#5684#0" expanded="false" />
+            <element signature="e#7574#7575#0" expanded="false" />
+            <element signature="e#7621#7622#0" expanded="false" />
+            <element signature="e#10725#10726#0" expanded="false" />
+            <element signature="e#10774#10775#0" expanded="false" />
+            <element signature="e#10918#10919#0" expanded="false" />
+            <element signature="e#10965#10966#0" expanded="false" />
+            <element signature="e#11359#11360#0" expanded="false" />
+            <element signature="e#11395#11396#0" expanded="false" />
+            <element signature="e#11625#11626#0" expanded="false" />
+            <element signature="e#11660#11661#0" expanded="false" />
+            <element signature="e#13139#13140#0" expanded="false" />
+            <element signature="e#13176#13177#0" expanded="false" />
+            <element signature="e#40036#40037#0" expanded="false" />
+            <element signature="e#40076#40077#0" expanded="false" />
+            <element signature="e#46225#46226#0" expanded="false" />
+            <element signature="e#46274#46275#0" expanded="false" />
+            <element signature="e#46562#46563#0" expanded="false" />
+            <element signature="e#46608#46609#0" expanded="false" />
+            <element signature="e#52936#52937#0" expanded="false" />
+            <element signature="e#52984#52985#0" expanded="false" />
+            <element signature="e#53136#53137#0" expanded="false" />
+            <element signature="e#53188#53189#0" expanded="false" />
+            <element signature="e#95024#95025#0" expanded="false" />
+            <element signature="e#95081#95082#0" expanded="false" />
+            <element signature="e#97554#97555#0" expanded="false" />
+            <element signature="e#97605#97606#0" expanded="false" />
+            <element signature="e#97640#97641#0" expanded="false" />
+            <element signature="e#97693#97694#0" expanded="false" />
+            <element signature="e#97752#97753#0" expanded="false" />
+            <element signature="e#97784#97785#0" expanded="false" />
+            <element signature="e#98223#98224#0" expanded="false" />
+            <element signature="e#98280#98281#0" expanded="false" />
+            <element signature="e#98356#98357#0" expanded="false" />
+            <element signature="e#98415#98416#0" expanded="false" />
+            <element signature="e#98652#98653#0" expanded="false" />
+            <element signature="e#98683#98684#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.3.1/recyclerview-v7-25.3.1-sources.jar!/android/support/v7/widget/RecyclerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93150">
+        <state relative-caret-position="93180">
           <caret line="6366" column="0" selection-start-line="6366" selection-start-column="0" selection-end-line="6366" selection-end-column="0" />
           <folding>
-            <element signature="e#228067#228068#0" expanded="true" />
-            <element signature="e#228133#228134#0" expanded="true" />
+            <element signature="e#0#554055#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#23365#23366#0" expanded="false" />
+            <element signature="e#23400#23401#0" expanded="false" />
+            <element signature="e#23474#23475#0" expanded="false" />
+            <element signature="e#23513#23514#0" expanded="false" />
+            <element signature="e#30782#30783#0" expanded="false" />
+            <element signature="e#30854#30855#0" expanded="false" />
+            <element signature="e#31343#31344#0" expanded="false" />
+            <element signature="e#31418#31419#0" expanded="false" />
+            <element signature="e#32034#32035#0" expanded="false" />
+            <element signature="e#32109#32110#0" expanded="false" />
+            <element signature="e#32504#32505#0" expanded="false" />
+            <element signature="e#32570#32571#0" expanded="false" />
+            <element signature="e#36469#36470#0" expanded="false" />
+            <element signature="e#36519#36520#0" expanded="false" />
+            <element signature="e#37526#37527#0" expanded="false" />
+            <element signature="e#37576#37577#0" expanded="false" />
+            <element signature="e#38861#38862#0" expanded="false" />
+            <element signature="e#38905#38906#0" expanded="false" />
+            <element signature="e#39093#39094#0" expanded="false" />
+            <element signature="e#39129#39130#0" expanded="false" />
+            <element signature="e#40093#40094#0" expanded="false" />
+            <element signature="e#40130#40131#0" expanded="false" />
+            <element signature="e#45346#45347#0" expanded="false" />
+            <element signature="e#45377#45378#0" expanded="false" />
+            <element signature="e#45908#45909#0" expanded="false" />
+            <element signature="e#45952#45953#0" expanded="false" />
+            <element signature="e#50805#50806#0" expanded="false" />
+            <element signature="e#50844#50845#0" expanded="false" />
+            <element signature="e#54276#54277#0" expanded="false" />
+            <element signature="e#54306#54307#0" expanded="false" />
+            <element signature="e#54766#54767#0" expanded="false" />
+            <element signature="e#54820#54821#0" expanded="false" />
+            <element signature="e#55358#55359#0" expanded="false" />
+            <element signature="e#55409#55410#0" expanded="false" />
+            <element signature="e#56397#56398#0" expanded="false" />
+            <element signature="e#56445#56446#0" expanded="false" />
+            <element signature="e#56681#56682#0" expanded="false" />
+            <element signature="e#56716#56717#0" expanded="false" />
+            <element signature="e#59095#59096#0" expanded="false" />
+            <element signature="e#59139#59140#0" expanded="false" />
+            <element signature="e#61261#61262#0" expanded="false" />
+            <element signature="e#61303#61304#0" expanded="false" />
+            <element signature="e#79953#79954#0" expanded="false" />
+            <element signature="e#79989#79990#0" expanded="false" />
+            <element signature="e#80227#80228#0" expanded="false" />
+            <element signature="e#80271#80272#0" expanded="false" />
+            <element signature="e#84189#84190#0" expanded="false" />
+            <element signature="e#84229#84230#0" expanded="false" />
+            <element signature="e#84431#84432#0" expanded="false" />
+            <element signature="e#84471#84472#0" expanded="false" />
+            <element signature="e#89307#89308#0" expanded="false" />
+            <element signature="e#89377#89378#0" expanded="false" />
+            <element signature="e#103847#103848#0" expanded="false" />
+            <element signature="e#103881#103882#0" expanded="false" />
+            <element signature="e#127160#127161#0" expanded="false" />
+            <element signature="e#127201#127202#0" expanded="false" />
+            <element signature="e#129464#129465#0" expanded="false" />
+            <element signature="e#129513#129514#0" expanded="false" />
+            <element signature="e#131224#131225#0" expanded="false" />
+            <element signature="e#131260#131261#0" expanded="false" />
+            <element signature="e#166202#166203#0" expanded="false" />
+            <element signature="e#166275#166276#0" expanded="false" />
+            <element signature="e#175621#175622#0" expanded="false" />
+            <element signature="e#175669#175670#0" expanded="false" />
+            <element signature="e#178899#178900#0" expanded="false" />
+            <element signature="e#178952#178953#0" expanded="false" />
+            <element signature="e#203315#203316#0" expanded="false" />
+            <element signature="e#203367#203368#0" expanded="false" />
+            <element signature="e#213902#213903#0" expanded="false" />
+            <element signature="e#213940#213941#0" expanded="false" />
+            <element signature="e#213965#213966#0" expanded="false" />
+            <element signature="e#214003#214004#0" expanded="false" />
+            <element signature="e#219897#219898#0" expanded="false" />
+            <element signature="e#219954#219955#0" expanded="false" />
+            <element signature="e#250415#250416#0" expanded="false" />
+            <element signature="e#250467#250468#0" expanded="false" />
+            <element signature="e#250509#250510#0" expanded="false" />
+            <element signature="e#250574#250575#0" expanded="false" />
+            <element signature="e#274905#274906#0" expanded="false" />
+            <element signature="e#274937#274938#0" expanded="false" />
+            <element signature="e#276042#276043#0" expanded="false" />
+            <element signature="e#276078#276079#0" expanded="false" />
+            <element signature="e#276718#276719#0" expanded="false" />
+            <element signature="e#276762#276763#0" expanded="false" />
+            <element signature="e#280391#280392#0" expanded="false" />
+            <element signature="e#280427#280428#0" expanded="false" />
+            <element signature="e#281734#281735#0" expanded="false" />
+            <element signature="e#281791#281792#0" expanded="false" />
+            <element signature="e#285775#285776#0" expanded="false" />
+            <element signature="e#285826#285827#0" expanded="false" />
+            <element signature="e#297653#297654#0" expanded="false" />
+            <element signature="e#297742#297743#0" expanded="false" />
+            <element signature="e#297819#297820#0" expanded="false" />
+            <element signature="e#297887#297888#0" expanded="false" />
+            <element signature="e#298146#298147#0" expanded="false" />
+            <element signature="e#298236#298237#0" expanded="false" />
+            <element signature="e#299527#299528#0" expanded="false" />
+            <element signature="e#299616#299617#0" expanded="false" />
+            <element signature="e#299693#299694#0" expanded="false" />
+            <element signature="e#299761#299762#0" expanded="false" />
+            <element signature="e#300020#300021#0" expanded="false" />
+            <element signature="e#300109#300110#0" expanded="false" />
+            <element signature="e#316276#316277#0" expanded="false" />
+            <element signature="e#316322#316323#0" expanded="false" />
+            <element signature="e#316699#316700#0" expanded="false" />
+            <element signature="e#316742#316743#0" expanded="false" />
+            <element signature="e#318153#318154#0" expanded="false" />
+            <element signature="e#318189#318190#0" expanded="false" />
+            <element signature="e#320033#320034#0" expanded="false" />
+            <element signature="e#320084#320085#0" expanded="false" />
+            <element signature="e#323612#323613#0" expanded="false" />
+            <element signature="e#323662#323663#0" expanded="false" />
+            <element signature="e#333878#333879#0" expanded="false" />
+            <element signature="e#333919#333920#0" expanded="false" />
+            <element signature="e#336710#336711#0" expanded="false" />
+            <element signature="e#336742#336743#0" expanded="false" />
+            <element signature="e#337612#337613#0" expanded="false" />
+            <element signature="e#337644#337645#0" expanded="false" />
+            <element signature="e#337938#337939#0" expanded="false" />
+            <element signature="e#337974#337975#0" expanded="false" />
+            <element signature="e#338262#338263#0" expanded="false" />
+            <element signature="e#338298#338299#0" expanded="false" />
+            <element signature="e#340752#340753#0" expanded="false" />
+            <element signature="e#340827#340828#0" expanded="false" />
+            <element signature="e#342139#342140#0" expanded="false" />
+            <element signature="e#342193#342194#0" expanded="false" />
+            <element signature="e#343099#343100#0" expanded="false" />
+            <element signature="e#343153#343154#0" expanded="false" />
+            <element signature="e#343493#343494#0" expanded="false" />
+            <element signature="e#343535#343536#0" expanded="false" />
+            <element signature="e#343932#343933#0" expanded="false" />
+            <element signature="e#343987#343988#0" expanded="false" />
+            <element signature="e#347264#347265#0" expanded="false" />
+            <element signature="e#347318#347319#0" expanded="false" />
+            <element signature="e#348711#348712#0" expanded="false" />
+            <element signature="e#348744#348745#0" expanded="false" />
+            <element signature="e#353969#353970#0" expanded="false" />
+            <element signature="e#354037#354038#0" expanded="false" />
+            <element signature="e#356207#356208#0" expanded="false" />
+            <element signature="e#356252#356253#0" expanded="false" />
+            <element signature="e#360420#360421#0" expanded="false" />
+            <element signature="e#360461#360462#0" expanded="false" />
+            <element signature="e#361095#361096#0" expanded="false" />
+            <element signature="e#361137#361138#0" expanded="false" />
+            <element signature="e#361295#361296#0" expanded="false" />
+            <element signature="e#361332#361333#0" expanded="false" />
+            <element signature="e#361493#361494#0" expanded="false" />
+            <element signature="e#361531#361532#0" expanded="false" />
+            <element signature="e#363393#363394#0" expanded="false" />
+            <element signature="e#363474#363475#0" expanded="false" />
+            <element signature="e#363742#363743#0" expanded="false" />
+            <element signature="e#363822#363823#0" expanded="false" />
+            <element signature="e#374427#374428#0" expanded="false" />
+            <element signature="e#374482#374483#0" expanded="false" />
+            <element signature="e#398506#398507#0" expanded="false" />
+            <element signature="e#398541#398542#0" expanded="false" />
+            <element signature="e#414490#414491#0" expanded="false" />
+            <element signature="e#414522#414523#0" expanded="false" />
+            <element signature="e#415077#415078#0" expanded="false" />
+            <element signature="e#415109#415110#0" expanded="false" />
+            <element signature="e#415679#415680#0" expanded="false" />
+            <element signature="e#415711#415712#0" expanded="false" />
+            <element signature="e#416222#416223#0" expanded="false" />
+            <element signature="e#416254#416255#0" expanded="false" />
+            <element signature="e#416801#416802#0" expanded="false" />
+            <element signature="e#416833#416834#0" expanded="false" />
+            <element signature="e#417395#417396#0" expanded="false" />
+            <element signature="e#417427#417428#0" expanded="false" />
+            <element signature="e#418881#418882#0" expanded="false" />
+            <element signature="e#418953#418954#0" expanded="false" />
+            <element signature="e#419093#419094#0" expanded="false" />
+            <element signature="e#419166#419167#0" expanded="false" />
+            <element signature="e#419888#419889#0" expanded="false" />
+            <element signature="e#419923#419924#0" expanded="false" />
+            <element signature="e#428609#428610#0" expanded="false" />
+            <element signature="e#428666#428667#0" expanded="false" />
+            <element signature="e#432006#432007#0" expanded="false" />
+            <element signature="e#432042#432043#0" expanded="false" />
+            <element signature="e#437647#437648#0" expanded="false" />
+            <element signature="e#437683#437684#0" expanded="false" />
+            <element signature="e#439983#439984#0" expanded="false" />
+            <element signature="e#440024#440025#0" expanded="false" />
+            <element signature="e#445799#445800#0" expanded="false" />
+            <element signature="e#445835#445836#0" expanded="false" />
+            <element signature="e#457024#457025#0" expanded="false" />
+            <element signature="e#457082#457083#0" expanded="false" />
+            <element signature="e#461345#461346#0" expanded="false" />
+            <element signature="e#461388#461389#0" expanded="false" />
+            <element signature="e#461634#461635#0" expanded="false" />
+            <element signature="e#461672#461673#0" expanded="false" />
+            <element signature="e#461795#461796#0" expanded="false" />
+            <element signature="e#461839#461840#0" expanded="false" />
+            <element signature="e#461868#461869#0" expanded="false" />
+            <element signature="e#461922#461923#0" expanded="false" />
+            <element signature="e#461948#461949#0" expanded="false" />
+            <element signature="e#462005#462006#0" expanded="false" />
+            <element signature="e#462047#462048#0" expanded="false" />
+            <element signature="e#462118#462119#0" expanded="false" />
+            <element signature="e#462163#462164#0" expanded="false" />
+            <element signature="e#462230#462231#0" expanded="false" />
+            <element signature="e#462267#462268#0" expanded="false" />
+            <element signature="e#462327#462328#0" expanded="false" />
+            <element signature="e#462358#462359#0" expanded="false" />
+            <element signature="e#462412#462413#0" expanded="false" />
+            <element signature="e#462613#462614#0" expanded="false" />
+            <element signature="e#462672#462673#0" expanded="false" />
+            <element signature="e#462705#462706#0" expanded="false" />
+            <element signature="e#462763#462764#0" expanded="false" />
+            <element signature="e#462792#462793#0" expanded="false" />
+            <element signature="e#462849#462850#0" expanded="false" />
+            <element signature="e#462880#462881#0" expanded="false" />
+            <element signature="e#462939#462940#0" expanded="false" />
+            <element signature="e#462986#462987#0" expanded="false" />
+            <element signature="e#463038#463039#0" expanded="false" />
+            <element signature="e#463073#463074#0" expanded="false" />
+            <element signature="e#463137#463138#0" expanded="false" />
+            <element signature="e#463320#463321#0" expanded="false" />
+            <element signature="e#463386#463387#0" expanded="false" />
+            <element signature="e#463422#463423#0" expanded="false" />
+            <element signature="e#463461#463462#0" expanded="false" />
+            <element signature="e#469567#469568#0" expanded="false" />
+            <element signature="e#469633#469634#0" expanded="false" />
+            <element signature="e#470021#470022#0" expanded="false" />
+            <element signature="e#470079#470080#0" expanded="false" />
+            <element signature="e#472424#472425#0" expanded="false" />
+            <element signature="e#472484#472485#0" expanded="false" />
+            <element signature="e#474462#474463#0" expanded="false" />
+            <element signature="e#474501#474502#0" expanded="false" />
+            <element signature="e#474555#474556#0" expanded="false" />
+            <element signature="e#474599#474600#0" expanded="false" />
+            <element signature="e#474657#474658#0" expanded="false" />
+            <element signature="e#474694#474695#0" expanded="false" />
+            <element signature="e#474756#474757#0" expanded="false" />
+            <element signature="e#474793#474794#0" expanded="false" />
+            <element signature="e#474845#474846#0" expanded="false" />
+            <element signature="e#474907#474908#0" expanded="false" />
+            <element signature="e#475200#475201#0" expanded="false" />
+            <element signature="e#475256#475257#0" expanded="false" />
+            <element signature="e#475547#475548#0" expanded="false" />
+            <element signature="e#475601#475602#0" expanded="false" />
+            <element signature="e#476041#476042#0" expanded="false" />
+            <element signature="e#476095#476096#0" expanded="false" />
+            <element signature="e#476515#476516#0" expanded="false" />
+            <element signature="e#476569#476570#0" expanded="false" />
+            <element signature="e#476750#476751#0" expanded="false" />
+            <element signature="e#476806#476807#0" expanded="false" />
+            <element signature="e#477108#477109#0" expanded="false" />
+            <element signature="e#477170#477171#0" expanded="false" />
+            <element signature="e#477607#477608#0" expanded="false" />
+            <element signature="e#477670#477671#0" expanded="false" />
+            <element signature="e#479341#479342#0" expanded="false" />
+            <element signature="e#479400#479401#0" expanded="false" />
+            <element signature="e#480788#480789#0" expanded="false" />
+            <element signature="e#480844#480845#0" expanded="false" />
+            <element signature="e#481094#481095#0" expanded="false" />
+            <element signature="e#481139#481140#0" expanded="false" />
+            <element signature="e#482413#482414#0" expanded="false" />
+            <element signature="e#482462#482463#0" expanded="false" />
+            <element signature="e#482587#482588#0" expanded="false" />
+            <element signature="e#482626#482627#0" expanded="false" />
+            <element signature="e#482890#482891#0" expanded="false" />
+            <element signature="e#482936#482937#0" expanded="false" />
+            <element signature="e#484723#484724#0" expanded="false" />
+            <element signature="e#484791#484792#0" expanded="false" />
+            <element signature="e#488639#488640#0" expanded="false" />
+            <element signature="e#488709#488710#0" expanded="false" />
+            <element signature="e#488993#488994#0" expanded="false" />
+            <element signature="e#489053#489054#0" expanded="false" />
+            <element signature="e#490622#490623#0" expanded="false" />
+            <element signature="e#490686#490687#0" expanded="false" />
+            <element signature="e#490725#490726#0" expanded="false" />
+            <element signature="e#490784#490785#0" expanded="false" />
+            <element signature="e#492775#492776#0" expanded="false" />
+            <element signature="e#492817#492818#0" expanded="false" />
+            <element signature="e#492964#492965#0" expanded="false" />
+            <element signature="e#493006#493007#0" expanded="false" />
+            <element signature="e#493159#493160#0" expanded="false" />
+            <element signature="e#493207#493208#0" expanded="false" />
+            <element signature="e#493397#493398#0" expanded="false" />
+            <element signature="e#493449#493450#0" expanded="false" />
+            <element signature="e#495885#495886#0" expanded="false" />
+            <element signature="e#495937#495938#0" expanded="false" />
+            <element signature="e#499285#499286#0" expanded="false" />
+            <element signature="e#499326#499327#0" expanded="false" />
+            <element signature="e#499555#499556#0" expanded="false" />
+            <element signature="e#499612#499613#0" expanded="false" />
+            <element signature="e#500060#500061#0" expanded="false" />
+            <element signature="e#500135#500136#0" expanded="false" />
+            <element signature="e#505836#505837#0" expanded="false" />
+            <element signature="e#505879#505880#0" expanded="false" />
+            <element signature="e#505989#505990#0" expanded="false" />
+            <element signature="e#506032#506033#0" expanded="false" />
+            <element signature="e#506370#506371#0" expanded="false" />
+            <element signature="e#506425#506426#0" expanded="false" />
+            <element signature="e#506751#506752#0" expanded="false" />
+            <element signature="e#506802#506803#0" expanded="false" />
+            <element signature="e#508775#508776#0" expanded="false" />
+            <element signature="e#508821#508822#0" expanded="false" />
+            <element signature="e#509378#509379#0" expanded="false" />
+            <element signature="e#509426#509427#0" expanded="false" />
+            <element signature="e#518302#518303#0" expanded="false" />
+            <element signature="e#518346#518347#0" expanded="false" />
+            <element signature="e#518557#518558#0" expanded="false" />
+            <element signature="e#518609#518610#0" expanded="false" />
+            <element signature="e#518804#518805#0" expanded="false" />
+            <element signature="e#518847#518848#0" expanded="false" />
+            <element signature="e#519053#519054#0" expanded="false" />
+            <element signature="e#519103#519104#0" expanded="false" />
+            <element signature="e#519307#519308#0" expanded="false" />
+            <element signature="e#519353#519354#0" expanded="false" />
+            <element signature="e#519574#519575#0" expanded="false" />
+            <element signature="e#519630#519631#0" expanded="false" />
+            <element signature="e#519834#519835#0" expanded="false" />
+            <element signature="e#519880#519881#0" expanded="false" />
+            <element signature="e#520101#520102#0" expanded="false" />
+            <element signature="e#520157#520158#0" expanded="false" />
+            <element signature="e#520571#520572#0" expanded="false" />
+            <element signature="e#520615#520616#0" expanded="false" />
+            <element signature="e#545705#545706#0" expanded="false" />
+            <element signature="e#545740#545741#0" expanded="false" />
+            <element signature="e#548557#548558#0" expanded="false" />
+            <element signature="e#548608#548609#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3176,8 +3645,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ComposeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/fragments_tweets_list.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TweetAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/MentionsTimelineFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/HomeTimelineFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TimelineActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
           <folding />
         </state>
       </provider>
