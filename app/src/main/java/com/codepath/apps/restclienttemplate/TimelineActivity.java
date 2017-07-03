@@ -113,4 +113,9 @@ public class TimelineActivity extends AppCompatActivity {
         }
     }
 
+    public void OnProfileView(MenuItem item) {
+        // launch the profile view
+        Intent i = new Intent(this,ProfileActivity.class);
+        startActivity(i);
+    }
 }

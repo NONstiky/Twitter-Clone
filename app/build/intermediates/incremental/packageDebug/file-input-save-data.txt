@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 03 15:51:23 PDT 2017
+#Mon Jul 03 16:04:39 PDT 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/design_bottom_navigation_item_background.xml
@@ -117,6 +117,7 @@
 59.set=ANDROID_RESOURCE
 245.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_dialog_material_background.xml
 168.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_timeline.xml
+276.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 199.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 122.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 220.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/vector_compose_fab.png
@@ -318,7 +319,7 @@
 165.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 126.set=ANDROID_RESOURCE
 140.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
-273.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
+273.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/activity_profile.xml
 196.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png
 171.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
 38.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
@@ -388,7 +389,7 @@
 166.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 136.set=ANDROID_RESOURCE
 141.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
-274.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_default_mtrl_shape.xml
+274.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
 197.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/design_navigation_item_subheader.xml
 120.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
 270.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
@@ -462,7 +463,7 @@
 167.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 146.set=ANDROID_RESOURCE
 142.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
-275.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/ic_vector_compose.png
+275.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_default_mtrl_shape.xml
 198.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/color/design_error.xml
 121.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/menu/menu_main.xml
 271.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
@@ -495,7 +496,7 @@
 181.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 121.set=ANDROID_RESOURCE
 227.set=ANDROID_RESOURCE
-count=276
+count=277
 273.set=ANDROID_RESOURCE
 27.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 77.set=ANDROID_RESOURCE
@@ -536,6 +537,7 @@ count=276
 147.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_alert_dialog_title_material.xml
 220.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
+276.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/ic_vector_compose.png
 199.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png
 122.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout/design_menu_item_action_area.xml
 272.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
@@ -559,6 +561,7 @@ count=276
 226.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/layout-v11/notification_template_big_media_narrow_custom.xml
 257.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 103.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
+276.set=ANDROID_RESOURCE
 232.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 155.base=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_
 7.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable/check.xml

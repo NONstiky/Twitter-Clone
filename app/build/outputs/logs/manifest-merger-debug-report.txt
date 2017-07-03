@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml
@@ -24,7 +24,7 @@ ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app
 	android:name
 		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:10:5-39:19
+ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:10:5-40:19
 MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.0.3] /Users/mbanchik/.android/build-cache/107c4adc84903d8f0254b07f9902917cf6d52102/output/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mbanchik/.android/build-cache/cf0a9548f50a545e3e9be9aecf3e040c63e5c0c7/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:29:5-20
@@ -95,9 +95,13 @@ ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app
 	android:name
 		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:37:19-50
 activity#com.codepath.apps.restclienttemplate.TweetDetailActivity
-ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:38:9-66
+ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:38:9-57
 	android:name
 		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:38:19-54
+activity#com.codepath.apps.restclienttemplate.ProfileActivity
+ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:39:9-62
+	android:name
+		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:39:19-50
 uses-sdk
 INJECTED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.0.3] /Users/mbanchik/.android/build-cache/107c4adc84903d8f0254b07f9902917cf6d52102/output/AndroidManifest.xml:7:5-9:41
