@@ -12,10 +12,13 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import com.codepath.apps.restclienttemplate.fragments.TweetsListFragment;
 import com.codepath.apps.restclienttemplate.fragments.TweetsPagerAdapter;
+import com.codepath.apps.restclienttemplate.models.Tweet;
 
-public class TimelineActivity extends AppCompatActivity {
+public class TimelineActivity extends AppCompatActivity implements TweetsListFragment.TweetSelectedListener{
 
     private final int COMPOSE_REQUEST_CODE = 20;
     private final int DETAILS_REQUEST_CODE = 21;
@@ -108,5 +111,10 @@ public class TimelineActivity extends AppCompatActivity {
         // launch the profile view
         Intent i = new Intent(this,ProfileActivity.class);
         startActivity(i);
+    }
+
+    @Override
+    public void onTweetSelected(Tweet tweet) {
+    // Toast.makeText(this,tweet.body,Toast.LENGTH_SHORT).show();
     }
 }

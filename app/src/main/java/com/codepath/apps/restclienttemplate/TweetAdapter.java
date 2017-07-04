@@ -33,9 +33,15 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
     List<Tweet> mTweets;
     Context context;
+    private  TweetAdapterListener mListener;
+    // define an interface required by the ViewHolder
+    public interface TweetAdapterListener{
+        public void onItemSelected(View view, int position);
+    }
     // pass in the Tweets array in the Constructor
-    public TweetAdapter(List<Tweet> tweets){
+    public TweetAdapter(List<Tweet> tweets, TweetAdapterListener listener){
         mTweets = tweets;
+        this.mListener = listener;
     }
 
     // for each row, inflate the layout and cache references into ViewHolder
@@ -170,6 +176,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             ibLike.setOnClickListener(this);
             ibDM.setOnClickListener(this);
 
+
         }
 
         @Override
@@ -290,13 +297,17 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                     //******************************************************************************//
 
                     default:
-                        // create intent for the new activity
-                        Intent intent = new Intent(context, TweetDetailActivity.class);
-                        // serialize the tweet using parceler, use its short name as a key
-                        intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
-                        intent.putExtra("position",Parcels.wrap(position));
-                        // show the activity
-                        ((AppCompatActivity)context).startActivityForResult(intent,DETAILS_REQUEST_CODE);
+                        if(mListener != null) {
+                            mListener.onItemSelected(v,position);
+
+                            // create intent for the new activity
+                            Intent intent = new Intent(context, TweetDetailActivity.class);
+                            // serialize the tweet using parceler, use its short name as a key
+                            intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                            intent.putExtra("position", Parcels.wrap(position));
+                            // show the activity
+                            ((AppCompatActivity) context).startActivityForResult(intent, DETAILS_REQUEST_CODE);
+                        }
                 }
             }
          }
