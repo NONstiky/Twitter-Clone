@@ -73,7 +73,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             try{
                 Glide.with(context).load(tweet.media_url)
                         .load(tweet.media_url)
-                        .bitmapTransform(new RoundedCornersTransformation(context,20,0))
+                        .bitmapTransform(new RoundedCornersTransformation(context,25,0))
                         .into(holder.ivMediaImage);
 
 
@@ -95,7 +95,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
 
             // SET PROFILE IMAGES
             Glide.with(context).load(tweet.user.profileImageUrl)
-                    .bitmapTransform(new RoundedCornersTransformation(context, 25, 0))
+                    .bitmapTransform(new RoundedCornersTransformation(context, 150, 0))
                     .into(holder.ivProfileImage);
             // SET RETWEET AND LIKE BUTTONS
             if (tweet.retweeted) {
