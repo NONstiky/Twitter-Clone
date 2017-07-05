@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.codepath.apps.restclienttemplate.TwitterApp;
 import com.codepath.apps.restclienttemplate.TwitterClient;
+import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
@@ -32,11 +33,12 @@ public class UserTimelineFragment extends TweetsListFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         client = TwitterApp.getRestClient();
-        populateTimeline();
+
+        populateThisTimeline();
 
     }
 
-    private void populateTimeline(){
+    private void populateThisTimeline(){
         //showProgressBar();
         // comes from the activity
         String screenName = getArguments().getString("screen_name");
@@ -77,5 +79,6 @@ public class UserTimelineFragment extends TweetsListFragment {
         });
 
     }
+
 
 }

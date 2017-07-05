@@ -175,7 +175,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             ibRetweet.setOnClickListener(this);
             ibLike.setOnClickListener(this);
             ibDM.setOnClickListener(this);
-
+            ivProfileImage.setOnClickListener(this);
 
         }
 
@@ -296,17 +296,26 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
                         break;
                     //******************************************************************************//
 
+                    case R.id.ivProfileImage:
+                        // launch the profile view
+                        Intent intent = new Intent(context,ProfileActivity.class);
+                        intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                        ((AppCompatActivity) context).startActivity(intent);
+                        break;
+
+                    //******************************************************************************//
+
                     default:
                         if(mListener != null) {
                             mListener.onItemSelected(v,position);
 
                             // create intent for the new activity
-                            Intent intent = new Intent(context, TweetDetailActivity.class);
+                            Intent intent2 = new Intent(context, TweetDetailActivity.class);
                             // serialize the tweet using parceler, use its short name as a key
-                            intent.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
-                            intent.putExtra("position", Parcels.wrap(position));
+                            intent2.putExtra(Tweet.class.getSimpleName(), Parcels.wrap(tweet));
+                            intent2.putExtra("position", Parcels.wrap(position));
                             // show the activity
-                            ((AppCompatActivity) context).startActivityForResult(intent, DETAILS_REQUEST_CODE);
+                            ((AppCompatActivity) context).startActivityForResult(intent2, DETAILS_REQUEST_CODE);
                         }
                 }
             }

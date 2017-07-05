@@ -71,10 +71,7 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
             }
         });
         // Configure the refreshing colors
-        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
-                android.R.color.holo_green_light,
-                android.R.color.holo_orange_light,
-                android.R.color.holo_red_light);
+        swipeContainer.setColorSchemeResources(R.color.twitter_blue);
         return v;
 
     }
