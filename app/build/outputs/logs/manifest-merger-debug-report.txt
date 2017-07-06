@@ -29,14 +29,14 @@ MERGED from [com.github.Raizlabs.DBFlow:dbflow:4.0.3] /Users/mbanchik/.android/b
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mbanchik/.android/build-cache/cf0a9548f50a545e3e9be9aecf3e040c63e5c0c7/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:transition:25.3.1] /Users/mbanchik/.android/build-cache/b0bee1519990ec3eaade7af398bbd2645e2521d8/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.1] /Users/mbanchik/.android/build-cache/5b8c6276640360343943014560407f2e7eca3a55/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] /Users/mbanchik/.android/build-cache/a36a18c666bb5d8517859201cf7eb94bd0e91f8a/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mbanchik/.android/build-cache/1b378f287d96e841384b7c6831c992024d5eab64/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mbanchik/.android/build-cache/08640567b2350d21ed05dbf06b4897ab54620183/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mbanchik/.android/build-cache/b14afc836fb2df7450f1a1522a8c55d0f3a36939/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:25.3.1] /Users/mbanchik/.android/build-cache/d91719b5f658a1d507904d548cac3fc6eb5ff505/output/AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from /Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/AndroidManifest.xml:14:9-41
@@ -110,8 +110,6 @@ MERGED from [jp.wasabeef:glide-transformations:2.0.2] /Users/mbanchik/.android/b
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/mbanchik/.android/build-cache/cf0a9548f50a545e3e9be9aecf3e040c63e5c0c7/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/mbanchik/.android/build-cache/1a9ed522aaed4d66a37d6c9616aa12bae41479fe/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] /Users/mbanchik/.android/build-cache/b0bee1519990ec3eaade7af398bbd2645e2521d8/output/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:25.3.1] /Users/mbanchik/.android/build-cache/5b8c6276640360343943014560407f2e7eca3a55/output/AndroidManifest.xml:21:5-23:54
@@ -119,6 +117,8 @@ MERGED from [com.android.support:support-fragment:25.3.1] /Users/mbanchik/.andro
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mbanchik/.android/build-cache/1b378f287d96e841384b7c6831c992024d5eab64/output/AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mbanchik/.android/build-cache/08640567b2350d21ed05dbf06b4897ab54620183/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mbanchik/.android/build-cache/b14afc836fb2df7450f1a1522a8c55d0f3a36939/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-compat:25.3.1] /Users/mbanchik/.android/build-cache/d91719b5f658a1d507904d548cac3fc6eb5ff505/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:23:9-59
@@ -131,8 +131,6 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/mbanchik/.android
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/mbanchik/.android/build-cache/1a9ed522aaed4d66a37d6c9616aa12bae41479fe/output/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:transition:25.3.1] /Users/mbanchik/.android/build-cache/b0bee1519990ec3eaade7af398bbd2645e2521d8/output/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] /Users/mbanchik/.android/build-cache/5b8c6276640360343943014560407f2e7eca3a55/output/AndroidManifest.xml:25:5-27:34
@@ -140,6 +138,8 @@ MERGED from [com.android.support:support-fragment:25.3.1] /Users/mbanchik/.andro
 MERGED from [com.android.support:support-media-compat:25.3.1] /Users/mbanchik/.android/build-cache/1b378f287d96e841384b7c6831c992024d5eab64/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] /Users/mbanchik/.android/build-cache/08640567b2350d21ed05dbf06b4897ab54620183/output/AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-utils:25.3.1] /Users/mbanchik/.android/build-cache/b14afc836fb2df7450f1a1522a8c55d0f3a36939/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1d2b602a8577b3115723f83cd131d46608d77ad3/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/mbanchik/.android/build-cache/1f6f98ffa211d6247d27708b18670b3c1469c72e/output/AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-compat:25.3.1] /Users/mbanchik/.android/build-cache/d91719b5f658a1d507904d548cac3fc6eb5ff505/output/AndroidManifest.xml:25:5-27:34
 	android:value
 		ADDED from [com.android.support:design:25.3.1] /Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/AndroidManifest.xml:27:9-31

@@ -30,10 +30,16 @@ import android.support.v4.widget.SwipeRefreshLayout;
  */
 
 public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAdapterListener {
-    public interface TweetSelectedListener{
+    public interface TweetSelectedListener {
         // handle tweet selection
         public void onTweetSelected(Tweet tweet);
     }
+
+
+    private final int COMPOSE_REQUEST_CODE = 20;
+    private final int DETAILS_REQUEST_CODE = 21;
+    private final int REPLY_REQUEST_CODE = 22;
+    private int position;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
@@ -45,14 +51,14 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // inflate the layout
-        View v = inflater.inflate(R.layout.fragments_tweets_list,container,false);
+        View v = inflater.inflate(R.layout.fragments_tweets_list, container, false);
 
         // find the RecyclerView
         rvTweets = (RecyclerView) v.findViewById(R.id.rvTweet);
         // init the arraylist (data)
         tweets = new ArrayList<>();
         // construct the adapter from this datasource
-        tweetAdapter = new TweetAdapter(tweets,this);
+        tweetAdapter = new TweetAdapter(tweets, this);
         // RecyclerView setup (layout manager, use adapter)
         rvTweets.setLayoutManager(new LinearLayoutManager(getContext()));
         // set the adapter
@@ -102,15 +108,40 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
         }
     }
 
-    public void fetchTimelineAsync(int page){
+    public void fetchTimelineAsync(int page) {
 
     }
 
+    public void updateTweets(Tweet tweet, int CURRENT_CODE,int position) {
+        if(CURRENT_CODE ==  COMPOSE_REQUEST_CODE || CURRENT_CODE == REPLY_REQUEST_CODE){
 
+            tweets.add(0, tweet);
+            tweetAdapter.notifyItemInserted(0);
+            rvTweets.scrollToPosition(0);
+
+        }
+
+        else if (CURRENT_CODE == DETAILS_REQUEST_CODE ){
+            tweets.remove(position);
+            tweets.add(position,tweet);
+            tweetAdapter.notifyItemChanged(position);
+        }
+    }
+
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public int getPosition() {
+        return position;
+    }
 
     @Override
     public void onItemSelected(View view, int position) {
         Tweet tweet = tweets.get(position);
         ((TweetSelectedListener) getActivity()).onTweetSelected(tweet);
     }
+
+
 }

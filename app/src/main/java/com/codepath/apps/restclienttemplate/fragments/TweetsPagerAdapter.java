@@ -4,13 +4,15 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.SparseArray;
+import android.view.ViewGroup;
 
 /**
  * Created by mbanchik on 7/3/17.
  */
 
 public class TweetsPagerAdapter extends FragmentPagerAdapter {
-
+    SparseArray<Fragment> registeredFragments = new SparseArray<Fragment>();
     private String tabTitles[] = new String[]{"Home","Mentions"};
     private Context context;
 
@@ -29,15 +31,38 @@ public class TweetsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
+
         if (position == 0){
-            return new HomeTimelineFragment();
+            HomeTimelineFragment homeTimelineFragment = new HomeTimelineFragment();
+            homeTimelineFragment.setPosition(0);
+            return homeTimelineFragment;
         }
+
         else if (position == 1) {
-            return new MentionsTimelineFragment();
+            MentionsTimelineFragment mentionsTimelineFragment = new MentionsTimelineFragment();
+            mentionsTimelineFragment.setPosition(1);
+            return mentionsTimelineFragment;
         }
         else{
             return null;
         }
+    }
+
+    @Override
+    public Object instantiateItem(ViewGroup container, int position) {
+        Fragment fragment = (Fragment)  super.instantiateItem(container, position);
+        registeredFragments.put(position, fragment);
+        return fragment;
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        registeredFragments.remove(position);
+        super.destroyItem(container, position, object);
+    }
+
+    public Fragment getRegisteredFragment(int position) {
+        return registeredFragments.get(position);
     }
 
 
