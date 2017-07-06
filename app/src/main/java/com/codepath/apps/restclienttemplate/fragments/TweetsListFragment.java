@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.codepath.apps.restclienttemplate.EndlessRecyclerViewScrollListener;
 import com.codepath.apps.restclienttemplate.R;
 import com.codepath.apps.restclienttemplate.TweetAdapter;
 import com.codepath.apps.restclienttemplate.TwitterApp;
@@ -40,6 +41,7 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
     private final int DETAILS_REQUEST_CODE = 21;
     private final int REPLY_REQUEST_CODE = 22;
     private int position;
+    EndlessRecyclerViewScrollListener scrollListener;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
@@ -60,9 +62,25 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
         // construct the adapter from this datasource
         tweetAdapter = new TweetAdapter(tweets, this);
         // RecyclerView setup (layout manager, use adapter)
-        rvTweets.setLayoutManager(new LinearLayoutManager(getContext()));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+
+        rvTweets.setLayoutManager(linearLayoutManager);
         // set the adapter
         rvTweets.setAdapter(tweetAdapter);
+
+        // Retain an instance so that you can call `resetState()` for fresh searches
+        scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list\
+                Tweet max_id_tweet = tweets.get(tweets.size()-1);
+                loadNextDataFromApi(max_id_tweet.uid -1);
+            }
+        };
+
+        // Adds the scroll listener to RecyclerView
+        rvTweets.addOnScrollListener(scrollListener);
 
         // Lookup the swipe container view
         swipeContainer = (SwipeRefreshLayout) v.findViewById(R.id.swipeContainer);
@@ -106,6 +124,17 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
             }
 
         }
+    }
+    public void loadNextDataFromApi(long offset) {
+        // Send an API request to retrieve appropriate paginated data
+        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
+
+        //  --> Deserialize and construct new model objects from the API response
+
+        //  --> Append the new data objects to the existing set of items inside the array of items
+
+        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
+
     }
 
     public void fetchTimelineAsync(int page) {

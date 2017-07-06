@@ -63,6 +63,24 @@ public class TwitterClient extends OAuthBaseClient {
         params.put("include_entities",true);
         client.get(apiUrl, params, handler);
     }
+    public void getHomeTimelinePage(int i,long max_id, AsyncHttpResponseHandler handler) {
+        String apiUrl = getApiUrl("statuses/home_timeline.json");
+        // Can specify query string params directly or through RequestParams.
+        RequestParams params = new RequestParams();
+        params.put("count", 25);
+        params.put("max_id",max_id);
+        params.put("include_entities",true);
+        client.get(apiUrl, params, handler);
+    }
+    public void getMentionsTimelinePage(int i,long max_id, AsyncHttpResponseHandler handler) {
+        String apiUrl = getApiUrl("statuses/mentions_timeline.json");
+        // Can specify query string params directly or through RequestParams.
+        RequestParams params = new RequestParams();
+        params.put("count", 25);
+        params.put("max_id",max_id);
+        params.put("include_entities",true);
+        client.get(apiUrl, params, handler);
+    }
 
     public void getUserTimeline(String screenName, AsyncHttpResponseHandler handler) {
         String apiUrl = getApiUrl("statuses/user_timeline.json");
@@ -70,6 +88,17 @@ public class TwitterClient extends OAuthBaseClient {
         RequestParams params = new RequestParams();
         params.put("screen_name",screenName);
         params.put("count", 25);
+        client.get(apiUrl, params, handler);
+    }
+
+
+    public void getUserTimelinePage(String screenName, long max_id,AsyncHttpResponseHandler handler) {
+        String apiUrl = getApiUrl("statuses/user_timeline.json");
+        // Can specify query string params directly or through RequestParams.
+        RequestParams params = new RequestParams();
+        params.put("screen_name",screenName);
+        params.put("count", 25);
+        params.put("max_id",max_id);
         client.get(apiUrl, params, handler);
     }
 
@@ -88,7 +117,6 @@ public class TwitterClient extends OAuthBaseClient {
         params.put("screen_name",screenName);
         client.get(apiUrl, params, handler);
     }
-
 
 	public void sendTweet(String message, AsyncHttpResponseHandler handler) {
 		String apiUrl = getApiUrl("statuses/update.json");
