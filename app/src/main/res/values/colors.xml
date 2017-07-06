@@ -21,4 +21,11 @@
     <color name="inline_action_pressed">@color/medium_gray_50</color>
     <color name="inline_action_retweet">@color/medium_green</color>
     <color name="inline_action_retweet_pressed">@color/medium_gray_50</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGray">#6F7273</color>
+    <color name="colorBlue">#00aced</color>
+    <color name="colorHintGray">#DCDCDC</color>
+    <color name="colorLightBlue">#1dcaff</color>
 </resources>
