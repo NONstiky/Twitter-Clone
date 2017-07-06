@@ -1,4 +1,4 @@
-package com.codepath.apps.restclienttemplate;
+package com.codepath.apps.restclienttemplate.Utilities;
 
 import java.util.Calendar;
 import java.util.Locale;

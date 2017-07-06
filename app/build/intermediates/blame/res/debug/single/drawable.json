@@ -12,6 +12,10 @@
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_photo.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/thumb_on.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/thumb_on.png"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/ic_vector_gif_pill.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_gif_pill.xml"
     },
@@ -40,12 +44,12 @@
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_poll.png"
     },
     {
-        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/noun_74450_cc.png",
-        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/noun_74450_cc.png"
-    },
-    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/notification_icon_background.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/noun_74450_cc.png",
+        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/noun_74450_cc.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
@@ -66,6 +70,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/ic_vector_messages.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_messages.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/star_on.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/star_on.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/ic_vector_search.xml",
@@ -136,12 +144,20 @@
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_messages_stroke.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/star_off.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/star_off.png"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/ic_vector_person_stroke.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_person_stroke.xml"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/ic_vector_location_stroke.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_location_stroke.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/heart_on.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/heart_on.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
@@ -204,6 +220,10 @@
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/drawable/ic_vector_home.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/heart_off.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/heart_off.png"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/notification_tile_bg.xml"
     },
@@ -214,6 +234,10 @@
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/Users/mbanchik/.android/build-cache/e77ce800fbd9f98cd133f93408c14da35d7b8e53/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/thumb_off.png",
+        "source": "/Users/mbanchik/.android/build-cache/66ca3cb6e1bbc35858b1f1dbad320d9968049fa7/output/res/drawable/thumb_off.png"
     },
     {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",

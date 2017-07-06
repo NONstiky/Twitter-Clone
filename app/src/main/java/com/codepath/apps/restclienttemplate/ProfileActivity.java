@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.ImageViewTargetFactory;
+import com.codepath.apps.restclienttemplate.Utilities.NumberFormatter;
 import com.codepath.apps.restclienttemplate.fragments.UserTimelineFragment;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.codepath.apps.restclienttemplate.models.User;
@@ -99,6 +100,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
     }
+
     public void populateUserHeadline(User user){
         TextView tvName = (TextView) findViewById(R.id.tvName);
         TextView tvTagline = (TextView) findViewById(R.id.tvTagline);
@@ -110,8 +112,8 @@ public class ProfileActivity extends AppCompatActivity {
         tvName.setText(user.name);
 
          tvTagline.setText(user.tagLine);
-         tvFollowers.setText(user.followersCount + " Followers");
-         tvFollowing.setText(user.followingCount + " Following");
+         tvFollowers.setText(NumberFormatter.format((long)user.followersCount, 0) + " Followers");
+         tvFollowing.setText(NumberFormatter.format((long)user.followingCount, 0) + " Following");
         // load profile image with Glide
         Glide.with(this).load(user.profileImageUrl).into(ivProfileImage);
     }

@@ -2,8 +2,6 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Movie;
-import android.icu.util.ValueIterator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,14 +12,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.codepath.apps.restclienttemplate.Utilities.TimeFormatter;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcels;
-import org.w3c.dom.Text;
 
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;

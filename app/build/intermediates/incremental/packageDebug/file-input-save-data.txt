@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jul 06 15:09:19 PDT 2017
+#Thu Jul 06 15:54:00 PDT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_btn_colored_material.xml
 14.set=ANDROID_RESOURCE
