@@ -51,17 +51,34 @@
         android:layout_marginBottom="10dp">
 
         <TextView
-            android:id="@+id/tvFollowers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="5 Followers"/>
-
-        <TextView
             android:id="@+id/tvFollowing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="5"/>
+
+        <TextView
+            android:id="@+id/tvFollowingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Following"/>
+
+        <TextView
+            android:id="@+id/tvFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="5 Following"/>
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:text="5"/>
+
+        <TextView
+            android:id="@+id/tvFollowersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Followers"/>
+
     </LinearLayout>
 
     <FrameLayout

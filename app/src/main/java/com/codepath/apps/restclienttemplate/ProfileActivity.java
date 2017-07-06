@@ -112,8 +112,8 @@ public class ProfileActivity extends AppCompatActivity {
         tvName.setText(user.name);
 
          tvTagline.setText(user.tagLine);
-         tvFollowers.setText(NumberFormatter.format((long)user.followersCount, 0) + " Followers");
-         tvFollowing.setText(NumberFormatter.format((long)user.followingCount, 0) + " Following");
+         tvFollowers.setText(NumberFormatter.format((long)user.followersCount, 0) );
+         tvFollowing.setText(NumberFormatter.format((long)user.followingCount, 0) );
         // load profile image with Glide
         Glide.with(this).load(user.profileImageUrl).into(ivProfileImage);
     }
