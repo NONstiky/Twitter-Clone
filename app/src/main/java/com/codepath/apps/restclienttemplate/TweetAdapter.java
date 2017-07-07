@@ -26,6 +26,8 @@ import java.util.List;
 import cz.msebera.android.httpclient.Header;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
+import static com.codepath.apps.restclienttemplate.models.SampleModel_Table.id;
+
 
 /**
  * Created by mbanchik on 6/26/17.
@@ -189,8 +191,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             TwitterClient client = TwitterApp.getRestClient();
             if (position != RecyclerView.NO_POSITION) {
                 final Tweet tweet = mTweets.get(position);
-                final int[] id = {v.getId()};
-                switch(id[0]) {
+                final int id = v.getId();
+                switch(id) {
                     //******************************************************************************//
                     case R.id.ibReply:
                         Intent i = new Intent(context, ComposeActivity.class);
