@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jul 07 17:42:34 PDT 2017
+#Fri Jul 07 17:49:50 PDT 2017
 210.set=ANDROID_RESOURCE
 282.file=/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/resources-debug.ap_/res/anim/design_fab_out.xml
 14.set=ANDROID_RESOURCE

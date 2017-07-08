@@ -11,8 +11,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a52bd4ce-4bfc-459b-b42b-5ab53f504d50" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ComposeTweet.gif" afterPath="$PROJECT_DIR$/../ComposeTweet.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ReplyTweet.gif" afterPath="$PROJECT_DIR$/../ReplyTweet.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/../.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/android/support/design/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TimelineActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetAdapter$ViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetDetailActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/TweetDetailActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/codepath/apps/restclienttemplate/fragments/TweetsListFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/Z1zo22l2OzPKixlelcwrjcKDOO4=" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/zip-cache/Z1zo22l2OzPKixlelcwrjcKDOO4=" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_350e9742eb4324389980392d0bf262c6f61d33e9.jar" afterPath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_350e9742eb4324389980392d0bf262c6f61d33e9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/Tweet$$Parcelable.java" afterPath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/Tweet$$Parcelable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/User$$Parcelable.java" afterPath="$PROJECT_DIR$/build/generated/source/apt/debug/com/codepath/apps/restclienttemplate/models/User$$Parcelable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/apps/restclienttemplate/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/codepath/apps/restclienttemplate/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_search.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_search.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" />
     </list>
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,25 +115,39 @@
           </file>
           <file leaf-file-name="activity_search.xml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_search.xml">
-              <provider selected="true" editor-type-id="android-designer2">
+              <provider editor-type-id="android-designer2">
                 <state />
               </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="FollowingFragment.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/FollowingFragment.java">
+          <file leaf-file-name="activity_timeline.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
+              <provider editor-type-id="android-designer2">
+                <state />
+              </provider>
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="61">
-                  <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="-92">
+                  <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="activity_profile.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
+              <provider editor-type-id="android-designer2">
+                <state />
+              </provider>
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="463">
+                  <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -131,18 +170,6 @@
                 <state relative-caret-position="495">
                   <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FollowersFragment.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/FollowersFragment.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -2067,7 +2094,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/Utilities/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/SearchTweets.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/ProfileActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/SearchActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/menu/menu_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/TwitterClient.java" />
@@ -2079,12 +2105,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/FollowingFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/MentionsTimelineFragment.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/fragments/SearchTweetsFragment.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_search.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="354" />
-    <option name="y" value="85" />
+    <option name="x" value="179" />
+    <option name="y" value="45" />
     <option name="width" value="1440" />
     <option name="height" value="815" />
   </component>
@@ -2676,7 +2703,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="354" y="85" width="1440" height="815" extended-state="1" />
+    <frame x="179" y="45" width="1440" height="815" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2998,28 +3025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/codepath/apps/restclienttemplate/Utilities/SearchActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -3191,13 +3196,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_search.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_timeline.xml">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_profile.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_search.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding />
         </state>
       </provider>
