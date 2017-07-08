@@ -5,6 +5,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_search"
+        android:orderInCategory="5"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
     <item
         android:id="@+id/miActionProgress"
         android:title="Loading..."
@@ -15,14 +21,9 @@
     <item
         android:id="@+id/miProfile"
         android:icon="@drawable/ic_vector_person_stroke"
-        app:showAsAction="ifRoom|withText"
+        app:showAsAction="always|withText"
         android:title="Profile"
         android:onClick="OnProfileView">
     </item>
-    <!--<item-->
-        <!--android:id="@+id/miCompose"-->
-        <!--android:icon="@drawable/vector_compose_fab"-->
-        <!--app:showAsAction="ifRoom"-->
-        <!--android:title="Compose">-->
-    <!--</item>-->
+
 </menu>

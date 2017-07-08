@@ -14,10 +14,13 @@ import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.view.menu.MenuView;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.support.v7.widget.SearchView;
+
 
 import com.codepath.apps.restclienttemplate.fragments.TweetsListFragment;
 import com.codepath.apps.restclienttemplate.fragments.TweetsPagerAdapter;
@@ -41,6 +44,7 @@ public class TimelineActivity extends AppCompatActivity implements TweetsListFra
     TweetsPagerAdapter tweetsPagerAdapter;
     ViewPager vpPager;
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -71,7 +75,37 @@ public class TimelineActivity extends AppCompatActivity implements TweetsListFra
         getMenuInflater().inflate(R.menu.menu_main, menu);
 //        miCompose = (MenuView.ItemView) findViewById(R.id.miCompose);
         miProfile = (MenuView.ItemView) findViewById(R.id.miProfile);
-        return true;
+
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+
+        MenuItemCompat.collapseActionView(searchItem);
+        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // perform query here
+                Intent i = new Intent(getApplicationContext(),SearchActivity.class);
+                i.putExtra("q",query);
+                startActivity(i);
+
+                // workaround to avoid issues with some emulators and keyboard devices firing twice if a keyboard enter is used
+                // see https://code.google.com/p/android/issues/detail?id=24599
+                searchView.clearFocus();
+
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
+        // Expand the search view and request focus
+        searchItem.expandActionView();
+        searchView.requestFocus();
+        return super.onCreateOptionsMenu(menu);
+
     }
 
     @Override

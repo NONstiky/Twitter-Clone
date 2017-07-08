@@ -15,6 +15,7 @@ import com.codepath.apps.restclienttemplate.EndlessRecyclerViewScrollListener;
 import com.codepath.apps.restclienttemplate.R;
 import com.codepath.apps.restclienttemplate.TweetAdapter;
 import com.codepath.apps.restclienttemplate.TwitterApp;
+import com.codepath.apps.restclienttemplate.TwitterClient;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -30,13 +31,13 @@ import android.support.v4.widget.SwipeRefreshLayout;
  * Created by mbanchik on 7/3/17.
  */
 
-public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAdapterListener {
+public abstract class TweetsListFragment extends Fragment implements TweetAdapter.TweetAdapterListener {
     public interface TweetSelectedListener {
         // handle tweet selection
         public void onTweetSelected(Tweet tweet);
     }
 
-
+    abstract protected void populateTimeline();
     private final int COMPOSE_REQUEST_CODE = 20;
     private final int DETAILS_REQUEST_CODE = 21;
     private final int REPLY_REQUEST_CODE = 22;
@@ -46,6 +47,7 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
     SwipeRefreshLayout swipeContainer;
+    TwitterClient client;
 
     // inflation happens inside onCreateView
 
@@ -54,7 +56,7 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // inflate the layout
         View v = inflater.inflate(R.layout.fragments_tweets_list, container, false);
-
+        client = TwitterApp.getRestClient();
         // find the RecyclerView
         rvTweets = (RecyclerView) v.findViewById(R.id.rvTweet);
         // init the arraylist (data)
@@ -96,6 +98,7 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
         });
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(R.color.twitter_blue);
+        populateTimeline();
         return v;
 
     }
@@ -125,6 +128,9 @@ public class TweetsListFragment extends Fragment implements TweetAdapter.TweetAd
 
         }
     }
+
+
+
     public void loadNextDataFromApi(long offset) {
         // Send an API request to retrieve appropriate paginated data
         //  --> Send the request including an offset value (i.e `page`) as a query parameter.

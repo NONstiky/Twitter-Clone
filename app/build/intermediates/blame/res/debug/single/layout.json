@@ -44,6 +44,10 @@
         "source": "/Users/mbanchik/.android/build-cache/c55830cb819139172ea7cd78aa3bb28db7564bbf/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
+        "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/layout/activity_search.xml",
+        "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/layout/activity_search.xml"
+    },
+    {
         "merged": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/build/intermediates/res/merged/debug/layout/activity_profile.xml",
         "source": "/Users/mbanchik/Documents/CodePath/PROJECTS/Twitter/Twitter-Clone/app/src/main/res/layout/activity_profile.xml"
     },

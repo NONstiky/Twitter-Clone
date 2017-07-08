@@ -18,17 +18,9 @@ import cz.msebera.android.httpclient.Header;
  */
 
 public class FollowersFragment extends TweetsListFragment {
-    private TwitterClient client;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        client = TwitterApp.getRestClient();
-        populateTimeline();
-
-    }
-
-    private void populateTimeline(){
+    protected void populateTimeline(){
         //showProgressBar();
         client.getHomeTimeline(0, new JsonHttpResponseHandler(){
 

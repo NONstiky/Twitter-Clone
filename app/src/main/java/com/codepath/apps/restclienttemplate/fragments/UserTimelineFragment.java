@@ -19,7 +19,6 @@ import cz.msebera.android.httpclient.Header;
  */
 
 public class UserTimelineFragment extends TweetsListFragment {
-    private TwitterClient client;
 
     public static UserTimelineFragment newInstance(String screenName){
         UserTimelineFragment userTimelineFragment = new UserTimelineFragment();
@@ -30,15 +29,7 @@ public class UserTimelineFragment extends TweetsListFragment {
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        client = TwitterApp.getRestClient();
-
-        populateThisTimeline();
-
-    }
-
-    private void populateThisTimeline(){
+    protected void populateTimeline(){
         //showProgressBar();
         // comes from the activity
         String screenName = getArguments().getString("screen_name");
